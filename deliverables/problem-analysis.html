@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Project 3: Crowd-Approved Comments</title>
+</head>
+<body>
+  <h1>Problem Analysis</h1>
+  <ul>
+    <li><h2>Overview</h2>
+      <ul>
+        <li><h3>Purpose and Goals</h3>
+          <p>The goal of the system is to provide a forum-like platform for internet users to create posts or post questions ("post") and comment on existing posts ("comment"). The basic implementation of this system will allow users to have several posts and other users will be able to comment on posts as well as give comments on existing comments. Users will also be able to upvote (and downvote) comments. An additional feature ("advanced version") is to allow forum staff to endorse posts and/or comments. In our use case, endorsed posts and comments will appear on top of other posts and/or comments in the website.</p></li>
+        <!--<li><h3>Context Diagram</h3>
+          <img id="context-diagram" src="img/context-diagram.png"></li>-->
+        <li><h3>Unusual Requirements</h3>
+          <p>One of the most essential requirements of this system is auto-updating of the page as comments come in. In this case, users do not need to refresh the page everytime in order to see new comments. It is essential for the page to get or receive new information from the server. That is, the implementation approach can have a page that constantly queries the server for new information (i.e. comments) or the server has an open channel between all its clients and send new information as they come in. The latter approach might be harder to implement.</p></li>
+          <li><h3>Key Features</h3>
+            <p>The crowd-approved comment system has the following features:</p>
+            <ul><li>Allow users to create posts and add comments to posts as well as existing comments</li>
+                <li>Upvote (and downvote) comments to existing posts; also, upvote on posts</li>
+                <li>For the advanced version, allow staff to endorse posts as well as comments</li></ul></li>
+      </ul></li>
+    <li><h2>Domain</h2>
+      <ul>
+        <li><h3>Object Model</h3>
+          <h4>Basic Model</h4>
+          <img id="basic-model" src="img/basic_model.png">
+          <h4>Advanced Model</h4>
+          <img id="advanced-model" src="img/advanced_model.png"></li>
+        <li><h3>Event Model</h3>
+          <h4>User events</h4>
+          <ul><li><strong>add_post:</strong> user creates new post</li>
+              <li><strong>edit_post:</strong> user edits post that belongs to it</li>
+              <li><strong>delete_post:</strong> user removes post that belongs to it</li>
+              <li><strong>up_vote:</strong> user upvotes a post or an existing comment to a post</li>
+              <li><strong>down_vote:</strong> user downvotes an existing comment to a post</li>
+              <li><strong>add_comment:</strong> user adds comment to an existing post</li></ul>
+              
+          <p>For the advanced version, a staff user exists. The staff inherits all user events.</p>
+          <h4>Staff events</h4>
+          <ul><li><strong>endorse_post:</strong> staff endorses and existing post</li>
+              <li><strong>endorse_comment:</strong> staff endorses existing comment</li>
+              <li><strong>delete_post:</strong> staff deletes any post</li>
+              <li><strong>delete_comment:</strong> staff deletes any comment</li></ul>
+              
+          <h4>Standard scenario</h4>
+          <ul><li>user_login</li>
+              <li>add_post</li>
+              <li>edit_post</li>
+              <li>add_comment</li>
+              <li>up_vote</li>
+              <li>down_vote</li>
+              <li>user_logout</li></ul>
+              
+          <h4>Orderings</h4>
+          <ul><li>User ::= add_post edit_post* delete_post* add_comment* up_vote* down_vote*</li>
+              <li>Staff ::= endorse_post* endorse_comment* delete_post* delete_comment*</li></ul>
+        </li>
+      </ul></li>
+      
+      <li><h2>Behavior</h2>
+        <ul><li><h3>Feature descriptions</h3>
+          <ul><li>Allow users to add, edit, and delete posts as well as comment on existing posts.</li>
+              <li>Enable staff to monitor posts including endorsing and moderating posts and comments.</li></ul></li>
+        </li>
+        
+        <li><h3>Security concerns</h3><p>While there isn't a huge security risk in this platform or system, it is necessary to ensure the credibility of the user. That is, users can only upvote and downvote posts that doesn't belong to it. It must not also have access to staff previliges. It follows that only staff accounts can only have access to staff privileges.</p></li>
+        
+        <li><h3>Wireframe</h3><img id="wireframe" src="img/wireframe.png"></li>
+      
+        </ul>
+      </li>
+      
+  </ul>
+</body>
+</html>
