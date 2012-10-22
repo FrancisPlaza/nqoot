@@ -245,3 +245,65 @@ Served asset /sessions.js - 304 Not Modified (0ms)
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-22 18:04:55 -0400
 Served asset /application.js - 304 Not Modified (0ms)
 Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-22 18:48:23 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (1.7ms)
+Compiled bootstrap-responsive.min.css  (0ms)  (pid 91159)
+Compiled bootstrap.min.css  (0ms)  (pid 91159)
+Compiled users.css  (46ms)  (pid 91159)
+Compiled application.css  (176ms)  (pid 91159)
+Compiled bootstrap.min.js  (0ms)  (pid 91159)
+Compiled users.js  (325ms)  (pid 91159)
+Compiled application.js  (422ms)  (pid 91159)
+Completed 200 OK in 873ms (Views: 870.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2012-10-22 18:48:24 -0400
+Served asset /bootstrap.min.css - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2012-10-22 18:48:24 -0400
+Served asset /bootstrap.min.js - 200 OK (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-10-22 18:48:24 -0400
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-22 18:48:24 -0400
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-10-22 18:48:24 -0400
+Served asset /sessions.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2012-10-22 18:48:24 -0400
+Served asset /bootstrap-responsive.min.css - 200 OK (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-22 18:48:24 -0400
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-10-22 18:48:24 -0400
+Served asset /sessions.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-22 18:48:24 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-22 18:48:24 -0400
+Served asset /application.js - 304 Not Modified (46ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-10-22 18:48:24 -0400
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2012-10-22 18:48:33 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
