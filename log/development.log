@@ -1,0 +1,246 @@
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (68.1ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (25.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to AddSessionsTable (20121022213000)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "sessions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "session_id" varchar(255) NOT NULL, "data" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("sessions")
+  [1m[36m (0.1ms)[0m  [1mCREATE INDEX "index_sessions_on_session_id" ON "sessions" ("session_id")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("sessions")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_sessions_on_session_id')[0m
+  [1m[35m (0.1ms)[0m  CREATE INDEX "index_sessions_on_updated_at" ON "sessions" ("updated_at")
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121022213000')[0m
+  [1m[35m (18.1ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("sessions")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_sessions_on_updated_at')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_sessions_on_session_id')[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to AddSessionsTable (20121022213000)
+Migrating to CreateUsers (20121022213905)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "provider" varchar(255), "uid" varchar(255), "name" varchar(255), "oauth_token" varchar(255), "oauth_expires_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121022213905')[0m
+  [1m[35m (82.7ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("sessions")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_sessions_on_updated_at')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_sessions_on_session_id')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("users")
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-22 17:57:00 -0400
+Processing by SessionsController#index as HTML
+  Rendered sessions/index.html.erb within layouts/application (2.2ms)
+Compiled sessions.css  (38ms)  (pid 89742)
+Compiled application.css  (56ms)  (pid 89742)
+Compiled jquery.js  (4ms)  (pid 89742)
+Compiled jquery_ujs.js  (0ms)  (pid 89742)
+Compiled sessions.js  (324ms)  (pid 89742)
+Compiled application.js  (529ms)  (pid 89742)
+Completed 200 OK in 952ms (Views: 948.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-22 17:57:01 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-22 17:57:01 -0400
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-22 17:57:01 -0400
+Served asset /application.js - 304 Not Modified (23ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-22 17:57:01 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-10-22 17:57:01 -0400
+Served asset /sessions.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-10-22 17:57:01 -0400
+Served asset /sessions.js - 304 Not Modified (2ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2012-10-22 17:57:07 -0400
+(facebook) Request phase initiated.
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-22 18:01:44 -0400
+Processing by SessionsController#index as HTML
+  Rendered sessions/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 49ms (Views: 49.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-10-22 18:01:44 -0400
+Served asset /sessions.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-22 18:01:44 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-22 18:01:44 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-22 18:01:44 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-22 18:01:44 -0400
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-10-22 18:01:44 -0400
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2012-10-22 18:01:45 -0400
+(facebook) Request phase initiated.
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-22 18:03:44 -0400
+Processing by SessionsController#index as HTML
+  Rendered sessions/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 48ms (Views: 47.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-10-22 18:03:44 -0400
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-22 18:03:44 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-22 18:03:44 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-22 18:03:44 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-22 18:03:44 -0400
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-10-22 18:03:44 -0400
+Served asset /sessions.js - 304 Not Modified (1ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2012-10-22 18:03:45 -0400
+(facebook) Request phase initiated.
+
+
+Started GET "/auth/facebook/callback?state=755d488a1a3339e42349c27d9daca852ccf54b5966a2f7d8&code=AQAPgDMesCNAg86hvvyIBRC_h44wSUNBwbHdMFdJz7rdVWVlel41ZErpor0Qhu8YLW7a41Ytr1zF6h3m_1ezKwbg5grTwoqBr1u0WY-9KEireegsimzdFFlrNThEIXk1g8RXwY4eElLQ2_Z02CvYDiDYcbYOh27aP8z3Fw7FGINp65zxLjeMrhuf6WeNXoAzRi2_0BSBKYOaYj2H-IxIjATu" for 127.0.0.1 at 2012-10-22 18:03:51 -0400
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"755d488a1a3339e42349c27d9daca852ccf54b5966a2f7d8", "code"=>"AQAPgDMesCNAg86hvvyIBRC_h44wSUNBwbHdMFdJz7rdVWVlel41ZErpor0Qhu8YLW7a41Ytr1zF6h3m_1ezKwbg5grTwoqBr1u0WY-9KEireegsimzdFFlrNThEIXk1g8RXwY4eElLQ2_Z02CvYDiDYcbYOh27aP8z3Fw7FGINp65zxLjeMrhuf6WeNXoAzRi2_0BSBKYOaYj2H-IxIjATu", "provider"=>"facebook"}
+Completed 500 Internal Server Error in 2ms
+
+SyntaxError (/Users/efcplaza/Documents/projects/efcplaza_proj3/app/models/user.rb:13: syntax error, unexpected $end, expecting keyword_end):
+  app/controllers/sessions_controller.rb:3:in `create'
+
+
+  Rendered /Users/efcplaza/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/efcplaza/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/efcplaza/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-22 18:04:37 -0400
+Processing by SessionsController#index as HTML
+  Rendered sessions/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 68ms (Views: 67.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-22 18:04:37 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-10-22 18:04:37 -0400
+Served asset /sessions.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-10-22 18:04:37 -0400
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-22 18:04:37 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-22 18:04:37 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-22 18:04:37 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2012-10-22 18:04:39 -0400
+(facebook) Request phase initiated.
+
+
+Started GET "/auth/facebook/callback?state=f646915893f19368707999e9b419b552eb3c9705d90061c7&code=AQDbrwpcW822iscJJs-oIrg3N4ZaNrDKTYZGfCUs_4qbtmzTZ1PmBh1Mf_HWLM_0Mini_VvqqD97ogKPUAoixdO7dQcT07AaCxsLV983v7-IKjRMVE7S5a61JAAvfYtIzgGDAdBq28U_-PAFVEopbwSswRoOEUygv7neuJNkTpFNGxgx5LpWUQArkNcw25Eum7iZ5LPmf-d4Dj75oTODgXm-" for 127.0.0.1 at 2012-10-22 18:04:39 -0400
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"f646915893f19368707999e9b419b552eb3c9705d90061c7", "code"=>"AQDbrwpcW822iscJJs-oIrg3N4ZaNrDKTYZGfCUs_4qbtmzTZ1PmBh1Mf_HWLM_0Mini_VvqqD97ogKPUAoixdO7dQcT07AaCxsLV983v7-IKjRMVE7S5a61JAAvfYtIzgGDAdBq28U_-PAFVEopbwSswRoOEUygv7neuJNkTpFNGxgx5LpWUQArkNcw25Eum7iZ5LPmf-d4Dj75oTODgXm-", "provider"=>"facebook"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."provider" = 'facebook' AND "users"."uid" = '1048612677' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "name", "oauth_expires_at", "oauth_token", "provider", "uid", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 22 Oct 2012 22:04:55 UTC +00:00], ["name", "Francis Plaza"], ["oauth_expires_at", Fri, 21 Dec 2012 22:03:51 UTC +00:00], ["oauth_token", "AAAFWRw2xgBsBALuRtC4gdOg8YBLzSamgumQ5mgC2LYjPZABE4lwX6QX0fRKcNE7EqZBugb6mcHgHZCRHZCFwH1Dhp8zMufLUWey9ZB1M5YAZDZD"], ["provider", "facebook"], ["uid", "1048612677"], ["updated_at", Mon, 22 Oct 2012 22:04:55 UTC +00:00]]
+  [1m[35m (51.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 71ms (ActiveRecord: 52.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-22 18:04:55 -0400
+Processing by SessionsController#index as HTML
+  Rendered sessions/index.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-22 18:04:55 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-10-22 18:04:55 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-22 18:04:55 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-22 18:04:55 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-10-22 18:04:55 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-22 18:04:55 -0400
+Served asset /application.js - 304 Not Modified (0ms)

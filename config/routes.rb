@@ -1,6 +1,14 @@
 EfcplazaProj3::Application.routes.draw do
+  get "sessions/create"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
+
+  match 'auth/:provider/callback', to: 'sessions#create'
+  match 'auth/failure', to: redirect('/')
+  match 'signout', to: 'sessions#destroy', as: 'signout'
+  
+  root :to => 'sessions#index'
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'

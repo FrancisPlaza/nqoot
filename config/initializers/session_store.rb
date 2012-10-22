@@ -1,6 +1,6 @@
 # Be sure to restart your server when you modify this file.
 
-EfcplazaProj3::Application.config.session_store :cookie_store, key: '_efcplaza_proj3_session'
+EfcplazaProj3::Application.config.session_store :active_record_store, key: '_efcplaza_proj3_session'
 
 # Use the database for sessions instead of the cookie-based default,
 # which shouldn't be used to store highly confidential information
