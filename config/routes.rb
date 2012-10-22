@@ -1,4 +1,6 @@
 EfcplazaProj3::Application.routes.draw do
+  get "users/index"
+
   get "sessions/create"
 
   # The priority is based upon order of creation:
