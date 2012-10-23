@@ -27,3 +27,18 @@
 #login-tooltip a:hover{
   text-decoration: none;
 }
+
+/* Dashboard Elements */
+
+#fb-pic {
+  height: 40px;
+}
+
+.bullet {
+  float: none;
+  padding: 10px 15px 10px;
+  color: #777;
+  text-decoration: none;
+  text-shadow: 0 1px 0 white;
+  display: block;
+}

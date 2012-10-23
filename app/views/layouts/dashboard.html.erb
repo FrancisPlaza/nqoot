@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= current_user.name %> - nQoot</title>
+  <link rel="shortcut icon" href="https://dl.dropbox.com/u/14875695/nqoot-assets/img/logo_thumb-16x16.png"/>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <ul class="nav">
+          <li class="active">
+            <img src="https://dl.dropbox.com/u/14875695/nqoot-assets/img/logo-83x40.png">
+          </li>
+        </ul>
+        <ul class="nav pull-right">
+          <li><a href="#">Ask</a></li>
+          <li><a href="/dashboard">Home</a></li>
+          <li><span class="bullet">&bull;</span></li>
+          <li><img id="fb-pic" src="https://graph.facebook.com/<%= current_user.uid %>/picture"></li>
+          <li>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><%= current_user.name %> <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+             <li><%= link_to "Sign out", signout_path, id: "sign-out" %></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div> 
+  
+<%= yield %>
+
+</body>
+</html>
