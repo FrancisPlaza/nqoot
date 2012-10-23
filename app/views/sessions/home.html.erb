@@ -1,0 +1,29 @@
+<% content_for :head do %>
+  <title>Login - nQoot</title>
+<% end %>
+
+<script type='text/javascript'>
+$(function(){
+  $('#fb-tooltip').tipsy({gravity: 'sw'});
+  
+});
+</script>
+
+<div class="container">
+  <div class="hero-unit">
+    <img id="nqoot-logo" src="https://dl.dropbox.com/u/14875695/nqoot-assets/img/logo.png" alt="nQoot">
+    <p id="desc">Keep on asking, and you will receive what you ask for. Keep on seeking, and you will find. Keep on knocking, and the door will be opened to you.</p>
+    <% if current_user %>
+      <p>Signed in as <strong><%= current_user.name %></strong>!
+        <p><%= link_to "Sign out", signout_path, id: "sign-out", class: "btn btn-primary btn-large" %></p>
+    <% else %>
+      <p><a id="sign-in" class="btn btn-primary btn-large" href="/auth/facebook">Sign in with Facebook &raquo;</a> <span id="login-tooltip"><a id="fb-tooltip" title="We use Facebook to confirm your identity."><small>[<strong>?</strong>]</small></a></span></p>
+      <span id="disclaimer" class="small">By logging in with Facebook, you are indicating that you have <br /> read and accept our <a href="#">Terms &amp; Conditions</a>.</span>
+    <% end %>
+  </div>
+
+  <footer>
+    <p>&copy nQoot 2012.</p>
+  </footer>
+  
+</div>

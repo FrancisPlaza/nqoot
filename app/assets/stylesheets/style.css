@@ -1,0 +1,29 @@
+.small {
+  font-size: .8em;
+  line-height: 0px;
+}
+
+#disclaimer {
+  color: #999;
+}
+
+#desc {
+  margin-bottom: 50px;
+  font-style: italic;
+  font-size: 24px;
+}
+
+#nqoot-logo {
+  width: 210px;
+  margin-bottom: 45px;
+}
+
+#login-tooltip a{
+  font-size: .8em;
+  color: #999;
+  cursor: pointer;
+}
+
+#login-tooltip a:hover{
+  text-decoration: none;
+}
