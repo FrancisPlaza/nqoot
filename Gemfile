@@ -44,4 +44,4 @@ gem 'jquery-rails'
 # gem 'debugger'
 
 # To use with Facebook authentication
-gem 'omniauth-facebook'
+gem 'omniauth-facebook', '1.4.0'
