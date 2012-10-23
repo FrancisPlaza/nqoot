@@ -1,8 +1,8 @@
 nQoot: Crowd-approved comment system
 ========================
 
-###Heroku URL
+###What is nQoot?
 
-Please put it here: http://sampleapp.herokuapp.com
+###Application URL
 
-###
+Please visit the application at: http://nqoot.francis.ph
