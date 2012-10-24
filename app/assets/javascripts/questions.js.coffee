@@ -17,6 +17,4 @@ $ ->
       url: url
       data: query
       success: (data, code, xmlhttp) ->
-        console.log(data)
-        console.log(code)
-        console.log(xmlhttp)
+        window.location = xmlhttp.responseText

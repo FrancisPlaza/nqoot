@@ -9,5 +9,6 @@ class Question < ActiveRecord::Base
     question.slug = params[:slug]
     question.user_id = uid
     question.save!
+    return question.slug
   end
 end

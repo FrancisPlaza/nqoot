@@ -53,3 +53,26 @@
 textarea {
   resize: none;
 }
+
+/* Question display elements */
+.question {
+  margin-top: 75px;
+}
+
+.question-text {
+  font-family: "Helvetica Neue",Arial,sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -1px;
+  margin-bottom: 0;
+}
+
+.question-desc {
+  display: block;
+  font-size: 1.2em;
+}
+
+.question-auth {
+  font-size: 80%;
+}

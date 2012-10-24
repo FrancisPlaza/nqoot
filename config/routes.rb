@@ -12,6 +12,7 @@ EfcplazaProj3::Application.routes.draw do
   
   match 'ask', to: 'questions#ask'
   match 'add/question', to: 'questions#create'
+  match 'question/:slug', to: 'questions#display'
   
   #match 'dashboard', to: 'dashboard#index'
   

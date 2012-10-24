@@ -1,0 +1,30 @@
+<div class="question container">
+    <div class="row">
+      <div class="span1">
+        <% if not @question.anonimity %>
+          <img class="pull-right" src="https://graph.facebook.com/<%= @user.uid %>/picture">
+        <% else %>
+          <img class="pull-right" src="https://dl.dropbox.com/u/14875695/nqoot-assets/img/anon-50x50.png">
+        <% end %>
+      </div>
+      <div class="span7">
+        <span class="question-text"><%= @question.question %></span>
+        <span class="question-desc"><%= @question.description %></span>
+        <span class="question-auth">
+        <% if @question.anonimity %>
+          by Anonymous created on <%= @question.created_at %>
+        <% else %>
+          by <%= @user.name %> created on <%= @question.created_at %>
+        <% end %>
+      </span>
+      </div>
+      <div class="span1">
+      </div>
+      <div class="span3">
+        <h5>Recent Questions</h5>
+        <% @recent_questions.each do |question| %>
+        <p><strong><a href="/question/<%= question.slug %>"><%= question.question %></a></strong></p>
+        <% end %>
+      </div>
+    </div>
+</div>
