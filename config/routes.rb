@@ -10,7 +10,9 @@ EfcplazaProj3::Application.routes.draw do
   match 'auth/failure', to: redirect('/')
   match 'signout', to: 'sessions#destroy', as: 'signout'
   
-  match 'dashboard', to: 'dashboard#index'
+  match 'ask', to: 'questions#ask'
+  
+  #match 'dashboard', to: 'dashboard#index'
   
   root :to => 'sessions#home'
 

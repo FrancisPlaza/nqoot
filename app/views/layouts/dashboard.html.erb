@@ -17,10 +17,10 @@
           </li>
         </ul>
         <ul class="nav pull-right">
-          <li><a href="#">Ask</a></li>
-          <li><a href="/dashboard">Home</a></li>
+          <li><%= link_to "Ask", ask_path, id: "ask" %></li>
+          <li><%= link_to "Home", root_path, id: "home" %></li>
           <li><span class="bullet">&bull;</span></li>
-          <li><img id="fb-pic" src="https://graph.facebook.com/<%= current_user.uid %>/picture"></li>
+          <li><img id="fb-pic" alt="Profile picture" src="https://graph.facebook.com/<%= current_user.uid %>/picture"></li>
           <li>
             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><%= current_user.name %> <b class="caret"></b></a>
             <ul class="dropdown-menu">

@@ -1,3 +1,5 @@
+/* Homepage Elements */
+
 .small {
   font-size: .8em;
   line-height: 0px;
@@ -41,4 +43,8 @@
   text-decoration: none;
   text-shadow: 0 1px 0 white;
   display: block;
+}
+
+.spacer {
+  margin-top: 20px;
 }
