@@ -1,13 +1,13 @@
 <div class="container">
   <div class="hero-unit">
   <h4>New Question</h4>
-  <form class="well">
-    <input name="question-title" type="text" class="span6" placeholder="Type your question here" maxlength="250"><br />
-    <textarea name="question-desc" class="span6" placeholder="Provide more details about your question" rows="5"></textarea><br />
+  <div class="well">
+    <input id="question-title" name="question-title" type="text" class="span6" placeholder="Type your question here" maxlength="250"><br />
+    <textarea id="question-desc" name="question-desc" class="span6" placeholder="Provide more details about your question" rows="5"></textarea><br />
     <label class="checkbox">
-      <input type="checkbox"> <small>I'm shy, post question anonymously</small>
+      <input id="anon-post" name="anon-post" type="checkbox"> <small>I'm shy, post question anonymously</small>
     </label>
-    <button type="submit" class="btn spacer">Ask Question</button>
-  </form>
+    <a id="add-question" class="btn spacer">Ask Question</a>
+  </div>
 </div>
 </div>

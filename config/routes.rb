@@ -11,6 +11,7 @@ EfcplazaProj3::Application.routes.draw do
   match 'signout', to: 'sessions#destroy', as: 'signout'
   
   match 'ask', to: 'questions#ask'
+  match 'add/question', to: 'questions#create'
   
   #match 'dashboard', to: 'dashboard#index'
   
