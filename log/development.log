@@ -27601,3 +27601,2114 @@ Served asset /facebook.js - 304 Not Modified (0ms)
 
 Started GET "/assets/jquery.tipsy.js?body=1" for 127.0.0.1 at 2012-10-24 00:24:54 -0400
 Served asset /jquery.tipsy.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-24 13:38:53 -0400
+Processing by SessionsController#home as HTML
+  [1m[36mUser Load (7.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/index.html.erb within layouts/dashboard (2.5ms)
+Completed 200 OK in 462ms (Views: 442.8ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-24 13:38:54 -0400
+Served asset /application.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2012-10-24 13:38:54 -0400
+Served asset /questions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-10-24 13:38:54 -0400
+Served asset /style.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-10-24 13:38:54 -0400
+Served asset /bootstrap.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-10-24 13:38:54 -0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (30ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-10-24 13:38:54 -0400
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tipsy.css?body=1" for 127.0.0.1 at 2012-10-24 13:38:54 -0400
+Served asset /tipsy.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-10-24 13:38:54 -0400
+Served asset /users.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-24 13:38:54 -0400
+Served asset /jquery.js - 304 Not Modified (44ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-24 13:38:54 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2012-10-24 13:38:54 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.tipsy.js?body=1" for 127.0.0.1 at 2012-10-24 13:38:54 -0400
+Served asset /jquery.tipsy.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2012-10-24 13:38:54 -0400
+Served asset /facebook.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2012-10-24 13:38:54 -0400
+Served asset /questions.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-10-24 13:38:54 -0400
+Served asset /sessions.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-10-24 13:38:54 -0400
+Served asset /users.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-24 13:38:54 -0400
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/slug.js?body=1" for 127.0.0.1 at 2012-10-24 13:38:54 -0400
+Served asset /slug.js - 304 Not Modified (1ms)
+
+
+Started GET "/question/Where-is-Harvard" for 127.0.0.1 at 2012-10-24 13:39:17 -0400
+Processing by QuestionsController#display as HTML
+  Parameters: {"slug"=>"Where-is-Harvard"}
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."slug" = 'Where-is-Harvard' LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-24 13:39:17 -0400
+Processing by SessionsController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/index.html.erb within layouts/dashboard (0.0ms)
+Completed 200 OK in 31ms (Views: 30.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:17 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:17 -0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:17 -0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:17 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:17 -0400
+Served asset /questions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:17 -0400
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tipsy.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:17 -0400
+Served asset /tipsy.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:17 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:17 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:17 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tipsy.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:17 -0400
+Served asset /jquery.tipsy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:17 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:17 -0400
+Served asset /questions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:17 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:17 -0400
+Served asset /facebook.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slug.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:17 -0400
+Served asset /slug.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:17 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:17 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/question/Is-Caltech-on-par-with-universities-like-MIT-Harvard-and-Stanford" for 127.0.0.1 at 2012-10-24 13:39:24 -0400
+Processing by QuestionsController#display as HTML
+  Parameters: {"slug"=>"Is-Caltech-on-par-with-universities-like-MIT-Harvard-and-Stanford"}
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."slug" = 'Is-Caltech-on-par-with-universities-like-MIT-Harvard-and-Stanford' LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = 1048612677 LIMIT 1[0m
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions" ORDER BY created_at DESC LIMIT 10
+  Rendered questions/display.html.erb within layouts/dashboard (82.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 128ms (Views: 92.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:24 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:24 -0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:24 -0400
+Served asset /questions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:24 -0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:24 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:24 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:24 -0400
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:24 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:24 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tipsy.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:24 -0400
+Served asset /tipsy.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:24 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:24 -0400
+Served asset /facebook.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tipsy.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:24 -0400
+Served asset /jquery.tipsy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:24 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:24 -0400
+Served asset /questions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slug.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:24 -0400
+Served asset /slug.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:24 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:24 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/question/Which-University-is-best-to-recruit-Computer-Science-majors-from-and-why" for 127.0.0.1 at 2012-10-24 13:39:45 -0400
+Processing by QuestionsController#display as HTML
+  Parameters: {"slug"=>"Which-University-is-best-to-recruit-Computer-Science-majors-from-and-why"}
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."slug" = 'Which-University-is-best-to-recruit-Computer-Science-majors-from-and-why' LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = 1048612677 LIMIT 1[0m
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions" ORDER BY created_at DESC LIMIT 10
+  Rendered questions/display.html.erb within layouts/dashboard (0.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:45 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:45 -0400
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:45 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:45 -0400
+Served asset /questions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:45 -0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:45 -0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:45 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:45 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:45 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tipsy.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:45 -0400
+Served asset /tipsy.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:45 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:45 -0400
+Served asset /facebook.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tipsy.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:45 -0400
+Served asset /jquery.tipsy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:45 -0400
+Served asset /questions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:45 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slug.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:45 -0400
+Served asset /slug.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:45 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:45 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/question/Is-Caltech-on-par-with-universities-like-MIT-Harvard-and-Stanford" for 127.0.0.1 at 2012-10-24 13:39:47 -0400
+Processing by QuestionsController#display as HTML
+  Parameters: {"slug"=>"Is-Caltech-on-par-with-universities-like-MIT-Harvard-and-Stanford"}
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."slug" = 'Is-Caltech-on-par-with-universities-like-MIT-Harvard-and-Stanford' LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = 1048612677 LIMIT 1[0m
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions" ORDER BY created_at DESC LIMIT 10
+  Rendered questions/display.html.erb within layouts/dashboard (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:47 -0400
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:47 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:47 -0400
+Served asset /questions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:47 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:47 -0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:47 -0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:47 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:47 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tipsy.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:47 -0400
+Served asset /tipsy.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:47 -0400
+Served asset /facebook.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:47 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tipsy.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:47 -0400
+Served asset /jquery.tipsy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:47 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:47 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:47 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:47 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:47 -0400
+Served asset /questions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slug.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:47 -0400
+Served asset /slug.js - 304 Not Modified (0ms)
+
+
+Started GET "/question/What-is-the-meaning-of-life" for 127.0.0.1 at 2012-10-24 13:39:49 -0400
+Processing by QuestionsController#display as HTML
+  Parameters: {"slug"=>"What-is-the-meaning-of-life"}
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."slug" = 'What-is-the-meaning-of-life' LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = 1048612677 LIMIT 1[0m
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions" ORDER BY created_at DESC LIMIT 10
+  Rendered questions/display.html.erb within layouts/dashboard (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:49 -0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:49 -0400
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:49 -0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:49 -0400
+Served asset /questions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:49 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:49 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tipsy.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:49 -0400
+Served asset /tipsy.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:49 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:49 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:49 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:49 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:49 -0400
+Served asset /facebook.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:49 -0400
+Served asset /questions.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:49 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tipsy.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:49 -0400
+Served asset /jquery.tipsy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slug.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:49 -0400
+Served asset /slug.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:49 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:49 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/question/Which-University-is-best-to-recruit-Computer-Science-majors-from-and-why" for 127.0.0.1 at 2012-10-24 13:39:53 -0400
+Processing by QuestionsController#display as HTML
+  Parameters: {"slug"=>"Which-University-is-best-to-recruit-Computer-Science-majors-from-and-why"}
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."slug" = 'Which-University-is-best-to-recruit-Computer-Science-majors-from-and-why' LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = 1048612677 LIMIT 1[0m
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions" ORDER BY created_at DESC LIMIT 10
+  Rendered questions/display.html.erb within layouts/dashboard (0.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 14ms (Views: 10.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:53 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:53 -0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:53 -0400
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:53 -0400
+Served asset /questions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:53 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tipsy.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:53 -0400
+Served asset /tipsy.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:53 -0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:53 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:53 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:53 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:53 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:53 -0400
+Served asset /facebook.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tipsy.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:53 -0400
+Served asset /jquery.tipsy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:53 -0400
+Served asset /questions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:53 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slug.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:53 -0400
+Served asset /slug.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:53 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:53 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/question/Is-Caltech-on-par-with-universities-like-MIT-Harvard-and-Stanford" for 127.0.0.1 at 2012-10-24 13:39:55 -0400
+Processing by QuestionsController#display as HTML
+  Parameters: {"slug"=>"Is-Caltech-on-par-with-universities-like-MIT-Harvard-and-Stanford"}
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."slug" = 'Is-Caltech-on-par-with-universities-like-MIT-Harvard-and-Stanford' LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = 1048612677 LIMIT 1[0m
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions" ORDER BY created_at DESC LIMIT 10
+  Rendered questions/display.html.erb within layouts/dashboard (0.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:56 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:56 -0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:56 -0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:56 -0400
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:56 -0400
+Served asset /questions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:56 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tipsy.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:56 -0400
+Served asset /tipsy.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:56 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:56 -0400
+Served asset /facebook.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:56 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-10-24 13:39:56 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:56 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:56 -0400
+Served asset /questions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tipsy.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:56 -0400
+Served asset /jquery.tipsy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:56 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slug.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:56 -0400
+Served asset /slug.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:56 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-24 13:39:56 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/question/Is-Caltech-on-par-with-universities-like-MIT-Harvard-and-Stanford" for 127.0.0.1 at 2012-10-24 13:55:03 -0400
+Processing by QuestionsController#display as HTML
+  Parameters: {"slug"=>"Is-Caltech-on-par-with-universities-like-MIT-Harvard-and-Stanford"}
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."slug" = 'Is-Caltech-on-par-with-universities-like-MIT-Harvard-and-Stanford' LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = 1048612677 LIMIT 1[0m
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions" ORDER BY created_at DESC LIMIT 10
+  Rendered questions/display.html.erb within layouts/dashboard (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 26ms (Views: 23.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-24 13:55:04 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-10-24 13:55:04 -0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-10-24 13:55:04 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-10-24 13:55:04 -0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-10-24 13:55:04 -0400
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2012-10-24 13:55:04 -0400
+Served asset /questions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tipsy.css?body=1" for 127.0.0.1 at 2012-10-24 13:55:04 -0400
+Served asset /tipsy.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-10-24 13:55:04 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:04 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:04 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:04 -0400
+Served asset /facebook.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:04 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tipsy.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:04 -0400
+Served asset /jquery.tipsy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slug.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:04 -0400
+Served asset /slug.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:04 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:04 -0400
+Served asset /questions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:04 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:04 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/question/Is-Caltech-on-par-with-universities-like-MIT-Harvard-and-Stanford" for 127.0.0.1 at 2012-10-24 13:55:17 -0400
+Processing by QuestionsController#display as HTML
+  Parameters: {"slug"=>"Is-Caltech-on-par-with-universities-like-MIT-Harvard-and-Stanford"}
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."slug" = 'Is-Caltech-on-par-with-universities-like-MIT-Harvard-and-Stanford' LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = 1048612677 LIMIT 1[0m
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions" ORDER BY created_at DESC LIMIT 10
+  Rendered questions/display.html.erb within layouts/dashboard (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-24 13:55:17 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-10-24 13:55:17 -0400
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-10-24 13:55:17 -0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2012-10-24 13:55:17 -0400
+Served asset /questions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-10-24 13:55:17 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-10-24 13:55:17 -0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tipsy.css?body=1" for 127.0.0.1 at 2012-10-24 13:55:17 -0400
+Served asset /tipsy.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-10-24 13:55:17 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:17 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:17 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:17 -0400
+Served asset /facebook.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tipsy.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:17 -0400
+Served asset /jquery.tipsy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:17 -0400
+Served asset /questions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:17 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:17 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slug.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:17 -0400
+Served asset /slug.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:17 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:17 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/question/Which-University-is-best-to-recruit-Computer-Science-majors-from-and-why" for 127.0.0.1 at 2012-10-24 13:55:21 -0400
+Processing by QuestionsController#display as HTML
+  Parameters: {"slug"=>"Which-University-is-best-to-recruit-Computer-Science-majors-from-and-why"}
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."slug" = 'Which-University-is-best-to-recruit-Computer-Science-majors-from-and-why' LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = 1048612677 LIMIT 1[0m
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions" ORDER BY created_at DESC LIMIT 10
+  Rendered questions/display.html.erb within layouts/dashboard (0.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 23ms (Views: 20.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-24 13:55:22 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-10-24 13:55:22 -0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-10-24 13:55:22 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-10-24 13:55:22 -0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2012-10-24 13:55:22 -0400
+Served asset /questions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-10-24 13:55:22 -0400
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-10-24 13:55:22 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:22 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:22 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tipsy.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:22 -0400
+Served asset /jquery.tipsy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tipsy.css?body=1" for 127.0.0.1 at 2012-10-24 13:55:22 -0400
+Served asset /tipsy.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:22 -0400
+Served asset /facebook.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:22 -0400
+Served asset /questions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:22 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:22 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:22 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slug.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:22 -0400
+Served asset /slug.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:22 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/question/What-is-the-meaning-of-life" for 127.0.0.1 at 2012-10-24 13:55:24 -0400
+Processing by QuestionsController#display as HTML
+  Parameters: {"slug"=>"What-is-the-meaning-of-life"}
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."slug" = 'What-is-the-meaning-of-life' LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = 1048612677 LIMIT 1[0m
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions" ORDER BY created_at DESC LIMIT 10
+  Rendered questions/display.html.erb within layouts/dashboard (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 13ms (Views: 10.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-24 13:55:24 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tipsy.css?body=1" for 127.0.0.1 at 2012-10-24 13:55:24 -0400
+Served asset /tipsy.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-10-24 13:55:24 -0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2012-10-24 13:55:24 -0400
+Served asset /questions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-10-24 13:55:24 -0400
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-10-24 13:55:24 -0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-10-24 13:55:24 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:24 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:24 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tipsy.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:24 -0400
+Served asset /jquery.tipsy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:24 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:24 -0400
+Served asset /questions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:24 -0400
+Served asset /facebook.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:24 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slug.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:24 -0400
+Served asset /slug.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:24 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:25 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/question/Is-Caltech-on-par-with-universities-like-MIT-Harvard-and-Stanford" for 127.0.0.1 at 2012-10-24 13:55:26 -0400
+Processing by QuestionsController#display as HTML
+  Parameters: {"slug"=>"Is-Caltech-on-par-with-universities-like-MIT-Harvard-and-Stanford"}
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."slug" = 'Is-Caltech-on-par-with-universities-like-MIT-Harvard-and-Stanford' LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = 1048612677 LIMIT 1[0m
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions" ORDER BY created_at DESC LIMIT 10
+  Rendered questions/display.html.erb within layouts/dashboard (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 40ms (Views: 37.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-10-24 13:55:27 -0400
+Served asset /sessions.css - 200 OK (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-10-24 13:55:27 -0400
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-10-24 13:55:27 -0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-24 13:55:27 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-10-24 13:55:27 -0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2012-10-24 13:55:27 -0400
+Served asset /questions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tipsy.css?body=1" for 127.0.0.1 at 2012-10-24 13:55:27 -0400
+Served asset /tipsy.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-10-24 13:55:27 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:28 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tipsy.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:28 -0400
+Served asset /jquery.tipsy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:28 -0400
+Served asset /questions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:28 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:28 -0400
+Served asset /facebook.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:28 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:28 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slug.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:28 -0400
+Served asset /slug.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:28 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-24 13:55:28 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-28 10:03:25 -0700
+Processing by SessionsController#home as HTML
+  Rendered sessions/home.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 587ms (Views: 493.7ms | ActiveRecord: 92.6ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-10-28 10:03:26 -0700
+Served asset /bootstrap-responsive.css - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-10-28 10:03:26 -0700
+Served asset /bootstrap.css - 200 OK (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-28 10:03:26 -0700
+Served asset /application.css - 200 OK (6ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2012-10-28 10:03:26 -0700
+Served asset /questions.css - 200 OK (1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-10-28 10:03:26 -0700
+Served asset /sessions.css - 200 OK (1ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-10-28 10:03:26 -0700
+Served asset /style.css - 200 OK (64ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-10-28 10:03:26 -0700
+Served asset /users.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-28 10:03:26 -0700
+Served asset /jquery.js - 200 OK (2ms)
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2012-10-28 10:03:26 -0700
+Served asset /facebook.js - 200 OK (3ms)
+
+
+Started GET "/assets/tipsy.css?body=1" for 127.0.0.1 at 2012-10-28 10:03:26 -0700
+Served asset /tipsy.css - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2012-10-28 10:03:26 -0700
+Served asset /bootstrap.min.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.tipsy.js?body=1" for 127.0.0.1 at 2012-10-28 10:03:26 -0700
+Served asset /jquery.tipsy.js - 200 OK (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-10-28 10:03:26 -0700
+Served asset /sessions.js - 200 OK (1ms)
+
+
+Started GET "/assets/slug.js?body=1" for 127.0.0.1 at 2012-10-28 10:03:26 -0700
+Served asset /slug.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-28 10:03:27 -0700
+Served asset /jquery_ujs.js - 200 OK (3ms)
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2012-10-28 10:03:27 -0700
+Served asset /questions.js - 200 OK (4ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-10-28 10:03:27 -0700
+Served asset /users.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-28 10:03:27 -0700
+Served asset /application.js - 200 OK (34ms)
+
+
+Started GET "/auth/facebook/callback" for 127.0.0.1 at 2012-10-28 10:03:29 -0700
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"provider"=>"facebook"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."provider" = 'facebook' AND "users"."uid" = '1048612677' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mUPDATE "users" SET "oauth_token" = 'AAAFWRw2xgBsBABNZA76ORUdr5KusHdxih00TYimZBkRZBqEufG0EUhVlQkJQWLngyPtdZBRGQTXlczLN9jUA2FwL9yQWQZAlMDUhhZAjZBPZCCZAxli8tltZBp', "oauth_expires_at" = '2012-10-28 19:00:00.000000', "updated_at" = '2012-10-28 17:03:30.744970' WHERE "users"."id" = 1[0m
+  [1m[35m (18.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 33ms (ActiveRecord: 18.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-28 10:03:30 -0700
+Processing by SessionsController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/index.html.erb within layouts/dashboard (0.3ms)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/question/Where-is-Harvard" for 127.0.0.1 at 2012-10-28 10:03:40 -0700
+Processing by QuestionsController#display as HTML
+  Parameters: {"slug"=>"Where-is-Harvard"}
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."slug" = 'Where-is-Harvard' LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-28 10:03:40 -0700
+Processing by SessionsController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/index.html.erb within layouts/dashboard (0.0ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/question/Is-Caltech-on-par-with-universities-like-MIT-Harvard-and-Stanford" for 127.0.0.1 at 2012-10-28 10:03:43 -0700
+Processing by QuestionsController#display as HTML
+  Parameters: {"slug"=>"Is-Caltech-on-par-with-universities-like-MIT-Harvard-and-Stanford"}
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."slug" = 'Is-Caltech-on-par-with-universities-like-MIT-Harvard-and-Stanford' LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = 1048612677 LIMIT 1[0m
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions" ORDER BY created_at DESC LIMIT 10
+  Rendered questions/display.html.erb within layouts/dashboard (1.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 42ms (Views: 30.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/ask" for 127.0.0.1 at 2012-10-28 10:04:08 -0700
+Processing by QuestionsController#ask as HTML
+  Rendered questions/ask.html.erb within layouts/dashboard (0.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-28 10:04:10 -0700
+Processing by SessionsController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/index.html.erb within layouts/dashboard (0.0ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-28 10:06:47 -0700
+Processing by SessionsController#home as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pages/index.html.erb within layouts/dashboard (0.3ms)
+Compiled style.css  (0ms)  (pid 5234)
+Compiled application.css  (2ms)  (pid 5234)
+Completed 200 OK in 151ms (Views: 149.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-10-28 10:06:47 -0700
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-10-28 10:06:47 -0700
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-10-28 10:06:47 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2012-10-28 10:06:47 -0700
+Served asset /questions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-10-28 10:06:47 -0700
+Served asset /style.css - 200 OK (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-28 10:06:47 -0700
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/tipsy.css?body=1" for 127.0.0.1 at 2012-10-28 10:06:47 -0700
+Served asset /tipsy.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-10-28 10:06:48 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2012-10-28 10:06:48 -0700
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-28 10:06:48 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-28 10:06:48 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2012-10-28 10:06:48 -0700
+Served asset /facebook.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tipsy.js?body=1" for 127.0.0.1 at 2012-10-28 10:06:48 -0700
+Served asset /jquery.tipsy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2012-10-28 10:06:48 -0700
+Served asset /questions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slug.js?body=1" for 127.0.0.1 at 2012-10-28 10:06:48 -0700
+Served asset /slug.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-10-28 10:06:48 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-10-28 10:06:48 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-28 10:06:48 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-28 10:08:43 -0700
+Processing by SessionsController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/index.html.erb within layouts/dashboard (0.4ms)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-28 10:08:43 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-10-28 10:08:43 -0700
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-10-28 10:08:43 -0700
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2012-10-28 10:08:43 -0700
+Served asset /questions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-10-28 10:08:43 -0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-10-28 10:08:43 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tipsy.css?body=1" for 127.0.0.1 at 2012-10-28 10:08:43 -0700
+Served asset /tipsy.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-10-28 10:08:43 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-28 10:08:43 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2012-10-28 10:08:43 -0700
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-28 10:08:43 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2012-10-28 10:08:43 -0700
+Served asset /facebook.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tipsy.js?body=1" for 127.0.0.1 at 2012-10-28 10:08:43 -0700
+Served asset /jquery.tipsy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2012-10-28 10:08:43 -0700
+Served asset /questions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-10-28 10:08:43 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slug.js?body=1" for 127.0.0.1 at 2012-10-28 10:08:43 -0700
+Served asset /slug.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-10-28 10:08:43 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-28 10:08:43 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-28 10:09:29 -0700
+Processing by SessionsController#home as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pages/index.html.erb within layouts/dashboard (0.3ms)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-28 10:09:29 -0700
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-10-28 10:09:29 -0700
+Served asset /bootstrap-responsive.css - 200 OK (0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2012-10-28 10:09:29 -0700
+Served asset /questions.css - 200 OK (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-10-28 10:09:29 -0700
+Served asset /sessions.css - 200 OK (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-10-28 10:09:29 -0700
+Served asset /users.css - 200 OK (0ms)
+
+
+Started GET "/assets/tipsy.css?body=1" for 127.0.0.1 at 2012-10-28 10:09:29 -0700
+Served asset /tipsy.css - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-10-28 10:09:29 -0700
+Served asset /bootstrap.css - 200 OK (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-10-28 10:09:29 -0700
+Served asset /style.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-28 10:09:29 -0700
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2012-10-28 10:09:29 -0700
+Served asset /bootstrap.min.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-28 10:09:29 -0700
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2012-10-28 10:09:29 -0700
+Served asset /questions.js - 200 OK (0ms)
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2012-10-28 10:09:29 -0700
+Served asset /facebook.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.tipsy.js?body=1" for 127.0.0.1 at 2012-10-28 10:09:29 -0700
+Served asset /jquery.tipsy.js - 200 OK (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-10-28 10:09:29 -0700
+Served asset /sessions.js - 200 OK (0ms)
+
+
+Started GET "/assets/slug.js?body=1" for 127.0.0.1 at 2012-10-28 10:09:29 -0700
+Served asset /slug.js - 200 OK (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-10-28 10:09:29 -0700
+Served asset /users.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-28 10:09:29 -0700
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-28 10:11:23 -0700
+Processing by SessionsController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/index.html.erb within layouts/dashboard (0.3ms)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-10-28 10:11:23 -0700
+Served asset /bootstrap-responsive.css - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-10-28 10:11:23 -0700
+Served asset /bootstrap.css - 200 OK (0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2012-10-28 10:11:23 -0700
+Served asset /questions.css - 200 OK (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-10-28 10:11:23 -0700
+Served asset /sessions.css - 200 OK (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-10-28 10:11:23 -0700
+Served asset /style.css - 200 OK (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-10-28 10:11:23 -0700
+Served asset /users.css - 200 OK (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-28 10:11:23 -0700
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/tipsy.css?body=1" for 127.0.0.1 at 2012-10-28 10:11:23 -0700
+Served asset /tipsy.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-28 10:11:23 -0700
+Served asset /jquery.js - 200 OK (8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-28 10:11:23 -0700
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2012-10-28 10:11:23 -0700
+Served asset /bootstrap.min.js - 200 OK (0ms)
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2012-10-28 10:11:23 -0700
+Served asset /facebook.js - 200 OK (0ms)
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2012-10-28 10:11:23 -0700
+Served asset /questions.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.tipsy.js?body=1" for 127.0.0.1 at 2012-10-28 10:11:23 -0700
+Served asset /jquery.tipsy.js - 200 OK (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-10-28 10:11:23 -0700
+Served asset /sessions.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-28 10:11:23 -0700
+Served asset /application.js - 200 OK (3ms)
+
+
+Started GET "/assets/slug.js?body=1" for 127.0.0.1 at 2012-10-28 10:11:23 -0700
+Served asset /slug.js - 200 OK (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-10-28 10:11:23 -0700
+Served asset /users.js - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-28 10:11:54 -0700
+Processing by SessionsController#home as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pages/index.html.erb within layouts/dashboard (0.3ms)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-28 10:11:54 -0700
+Served asset /application.css - 200 OK (5ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-10-28 10:11:54 -0700
+Served asset /bootstrap-responsive.css - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-10-28 10:11:54 -0700
+Served asset /bootstrap.css - 200 OK (0ms)
+
+
+Started GET "/assets/tipsy.css?body=1" for 127.0.0.1 at 2012-10-28 10:11:54 -0700
+Served asset /tipsy.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-28 10:11:54 -0700
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-10-28 10:11:54 -0700
+Served asset /users.css - 200 OK (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-10-28 10:11:54 -0700
+Served asset /style.css - 200 OK (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-10-28 10:11:54 -0700
+Served asset /sessions.css - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2012-10-28 10:11:54 -0700
+Served asset /bootstrap.min.js - 200 OK (0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2012-10-28 10:11:54 -0700
+Served asset /questions.css - 200 OK (0ms)
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2012-10-28 10:11:54 -0700
+Served asset /facebook.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.tipsy.js?body=1" for 127.0.0.1 at 2012-10-28 10:11:54 -0700
+Served asset /jquery.tipsy.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-28 10:11:54 -0700
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2012-10-28 10:11:54 -0700
+Served asset /questions.js - 200 OK (0ms)
+
+
+Started GET "/assets/slug.js?body=1" for 127.0.0.1 at 2012-10-28 10:11:54 -0700
+Served asset /slug.js - 200 OK (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-10-28 10:11:54 -0700
+Served asset /users.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-28 10:11:54 -0700
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-10-28 10:11:54 -0700
+Served asset /sessions.js - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-28 10:14:30 -0700
+Processing by SessionsController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."user_id" = 1048612677 LIMIT 1
+  Rendered pages/index.html.erb within layouts/dashboard (60.3ms)
+Completed 500 Internal Server Error in 83ms
+
+ActionView::Template::Error (undefined method `each' for #<Question:0x007f87e95ff690>):
+    3:     <div class="span8">
+    4:       <h1>Your Questions</h1>
+    5:       <table class="table table-striped table-hover">
+    6:         <% @questions.each do |question| %>
+    7:         <tr><td><%= question.question %></td></tr>
+    8:         <% end %>
+    9:       </table>
+  app/views/pages/index.html.erb:6:in `_app_views_pages_index_html_erb___2513210358961857422_70110876841720'
+  app/controllers/sessions_controller.rb:6:in `home'
+
+
+  Rendered /Users/efcplaza/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/efcplaza/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/efcplaza/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-28 10:15:37 -0700
+Processing by SessionsController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."user_id" = 1048612677
+  Rendered pages/index.html.erb within layouts/dashboard (0.1ms)
+Completed 200 OK in 54ms (Views: 9.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-28 10:15:37 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-10-28 10:15:37 -0700
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2012-10-28 10:15:37 -0700
+Served asset /questions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-10-28 10:15:37 -0700
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-10-28 10:15:37 -0700
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-10-28 10:15:37 -0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-10-28 10:15:37 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tipsy.css?body=1" for 127.0.0.1 at 2012-10-28 10:15:37 -0700
+Served asset /tipsy.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-28 10:15:37 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2012-10-28 10:15:37 -0700
+Served asset /facebook.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2012-10-28 10:15:37 -0700
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-28 10:15:37 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-10-28 10:15:37 -0700
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2012-10-28 10:15:37 -0700
+Served asset /questions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tipsy.js?body=1" for 127.0.0.1 at 2012-10-28 10:15:37 -0700
+Served asset /jquery.tipsy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/slug.js?body=1" for 127.0.0.1 at 2012-10-28 10:15:37 -0700
+Served asset /slug.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-10-28 10:15:37 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-28 10:15:37 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-28 10:16:24 -0700
+Processing by SessionsController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."user_id" = 1048612677
+  Rendered pages/index.html.erb within layouts/dashboard (0.6ms)
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-10-28 10:16:24 -0700
+Served asset /style.css - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-10-28 10:16:24 -0700
+Served asset /bootstrap.css - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-10-28 10:16:24 -0700
+Served asset /bootstrap-responsive.css - 200 OK (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-10-28 10:16:24 -0700
+Served asset /sessions.css - 200 OK (0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2012-10-28 10:16:24 -0700
+Served asset /questions.css - 200 OK (0ms)
+
+
+Started GET "/assets/tipsy.css?body=1" for 127.0.0.1 at 2012-10-28 10:16:24 -0700
+Served asset /tipsy.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-28 10:16:24 -0700
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-28 10:16:24 -0700
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-10-28 10:16:24 -0700
+Served asset /users.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-28 10:16:24 -0700
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2012-10-28 10:16:24 -0700
+Served asset /bootstrap.min.js - 200 OK (0ms)
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2012-10-28 10:16:24 -0700
+Served asset /facebook.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.tipsy.js?body=1" for 127.0.0.1 at 2012-10-28 10:16:24 -0700
+Served asset /jquery.tipsy.js - 200 OK (0ms)
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2012-10-28 10:16:24 -0700
+Served asset /questions.js - 200 OK (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-10-28 10:16:24 -0700
+Served asset /sessions.js - 200 OK (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-10-28 10:16:24 -0700
+Served asset /users.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-28 10:16:24 -0700
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/slug.js?body=1" for 127.0.0.1 at 2012-10-28 10:16:24 -0700
+Served asset /slug.js - 200 OK (0ms)
+
+
+Started GET "/question/Is-Caltech-on-par-with-universities-like-MIT-Harvard-and-Stanford" for 127.0.0.1 at 2012-10-28 10:16:32 -0700
+Processing by QuestionsController#display as HTML
+  Parameters: {"slug"=>"Is-Caltech-on-par-with-universities-like-MIT-Harvard-and-Stanford"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions" WHERE "questions"."slug" = 'Is-Caltech-on-par-with-universities-like-MIT-Harvard-and-Stanford' LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."uid" = 1048612677 LIMIT 1
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT "questions".* FROM "questions" ORDER BY created_at DESC LIMIT 10[0m
+  Rendered questions/display.html.erb within layouts/dashboard (0.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 13ms (Views: 10.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-28 10:16:36 -0700
+Processing by SessionsController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."user_id" = 1048612677
+  Rendered pages/index.html.erb within layouts/dashboard (0.1ms)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/question/What-is-the-meaning-of-life" for 127.0.0.1 at 2012-10-28 10:16:37 -0700
+Processing by QuestionsController#display as HTML
+  Parameters: {"slug"=>"What-is-the-meaning-of-life"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT "questions".* FROM "questions" WHERE "questions"."slug" = 'What-is-the-meaning-of-life' LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."uid" = 1048612677 LIMIT 1
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT "questions".* FROM "questions" ORDER BY created_at DESC LIMIT 10[0m
+  Rendered questions/display.html.erb within layouts/dashboard (0.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 31ms (Views: 29.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-28 10:16:39 -0700
+Processing by SessionsController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."user_id" = 1048612677
+  Rendered pages/index.html.erb within layouts/dashboard (0.1ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/question/Which-University-is-best-to-recruit-Computer-Science-majors-from-and-why" for 127.0.0.1 at 2012-10-28 10:16:41 -0700
+Processing by QuestionsController#display as HTML
+  Parameters: {"slug"=>"Which-University-is-best-to-recruit-Computer-Science-majors-from-and-why"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT "questions".* FROM "questions" WHERE "questions"."slug" = 'Which-University-is-best-to-recruit-Computer-Science-majors-from-and-why' LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."uid" = 1048612677 LIMIT 1
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT "questions".* FROM "questions" ORDER BY created_at DESC LIMIT 10[0m
+  Rendered questions/display.html.erb within layouts/dashboard (0.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-28 10:16:43 -0700
+Processing by SessionsController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."user_id" = 1048612677
+  Rendered pages/index.html.erb within layouts/dashboard (0.1ms)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-28 10:18:21 -0700
+Processing by SessionsController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."user_id" = 1048612677
+  Rendered pages/index.html.erb within layouts/dashboard (1.3ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    11:     <div class="span1"></div>
+    12:     <div class="span3">
+    13:       <h5>Recent Questions</h5>
+    14:       <% @recent_questions.each do |question| %>
+    15:       <p><strong><a href="/question/<%= question.slug %>"><%= question.question %></a></strong></p>
+    16:       <% end %>
+    17:     </div>
+  app/views/pages/index.html.erb:14:in `_app_views_pages_index_html_erb___2513210358961857422_70110876909620'
+  app/controllers/sessions_controller.rb:6:in `home'
+
+
+  Rendered /Users/efcplaza/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (21.3ms)
+  Rendered /Users/efcplaza/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/efcplaza/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (28.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-28 10:19:12 -0700
+Processing by SessionsController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."user_id" = 1048612677
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions" ORDER BY created_at DESC LIMIT 10[0m
+  Rendered pages/index.html.erb within layouts/dashboard (0.1ms)
+Completed 200 OK in 32ms (Views: 9.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-10-28 10:19:12 -0700
+Served asset /bootstrap-responsive.css - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-10-28 10:19:12 -0700
+Served asset /bootstrap.css - 200 OK (0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2012-10-28 10:19:12 -0700
+Served asset /questions.css - 200 OK (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-10-28 10:19:12 -0700
+Served asset /style.css - 200 OK (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-10-28 10:19:12 -0700
+Served asset /users.css - 200 OK (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-10-28 10:19:12 -0700
+Served asset /sessions.css - 200 OK (0ms)
+
+
+Started GET "/assets/tipsy.css?body=1" for 127.0.0.1 at 2012-10-28 10:19:12 -0700
+Served asset /tipsy.css - 200 OK (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-28 10:19:12 -0700
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-28 10:19:12 -0700
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-28 10:19:12 -0700
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2012-10-28 10:19:12 -0700
+Served asset /bootstrap.min.js - 200 OK (0ms)
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2012-10-28 10:19:12 -0700
+Served asset /facebook.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.tipsy.js?body=1" for 127.0.0.1 at 2012-10-28 10:19:12 -0700
+Served asset /jquery.tipsy.js - 200 OK (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-10-28 10:19:12 -0700
+Served asset /sessions.js - 200 OK (0ms)
+
+
+Started GET "/assets/slug.js?body=1" for 127.0.0.1 at 2012-10-28 10:19:12 -0700
+Served asset /slug.js - 200 OK (0ms)
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2012-10-28 10:19:12 -0700
+Served asset /questions.js - 200 OK (8ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-10-28 10:19:12 -0700
+Served asset /users.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-28 10:19:12 -0700
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/ask" for 127.0.0.1 at 2012-10-28 10:19:21 -0700
+Processing by QuestionsController#ask as HTML
+  Rendered questions/ask.html.erb within layouts/dashboard (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/add/question" for 127.0.0.1 at 2012-10-28 10:19:55 -0700
+Processing by QuestionsController#create as */*
+  Parameters: {"question"=>"What the the best company in Silicon Valley?", "description"=>"I am visiting the Bay area and would like to visit the best companies around.", "anonimity"=>"false", "slug"=>"What-the-the-best-company-in-Silicon-Valley"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "questions" ("anonimity", "created_at", "description", "question", "slug", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["anonimity", false], ["created_at", Sun, 28 Oct 2012 17:19:55 UTC +00:00], ["description", "I am visiting the Bay area and would like to visit the best companies around."], ["question", "What the the best company in Silicon Valley?"], ["slug", "What-the-the-best-company-in-Silicon-Valley"], ["updated_at", Sun, 28 Oct 2012 17:19:55 UTC +00:00], ["user_id", 1048612677]]
+  [1m[35m (44.8ms)[0m  commit transaction
+  Rendered text template (0.0ms)
+Completed 200 OK in 71ms (Views: 22.7ms | ActiveRecord: 45.3ms)
+
+
+Started GET "/question/What-the-the-best-company-in-Silicon-Valley" for 127.0.0.1 at 2012-10-28 10:19:55 -0700
+Processing by QuestionsController#display as HTML
+  Parameters: {"slug"=>"What-the-the-best-company-in-Silicon-Valley"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions" WHERE "questions"."slug" = 'What-the-the-best-company-in-Silicon-Valley' LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."uid" = 1048612677 LIMIT 1
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions" ORDER BY created_at DESC LIMIT 10[0m
+  Rendered questions/display.html.erb within layouts/dashboard (0.4ms)
+  [1m[35mUser Load (1.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 35ms (Views: 23.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-28 10:20:01 -0700
+Processing by SessionsController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."user_id" = 1048612677
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT "questions".* FROM "questions" ORDER BY created_at DESC LIMIT 10[0m
+  Rendered pages/index.html.erb within layouts/dashboard (0.1ms)
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ask" for 127.0.0.1 at 2012-10-28 10:20:14 -0700
+Processing by QuestionsController#ask as HTML
+  Rendered questions/ask.html.erb within layouts/dashboard (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-28 10:20:15 -0700
+Processing by SessionsController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."user_id" = 1048612677
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions" ORDER BY created_at DESC LIMIT 10[0m
+  Rendered pages/index.html.erb within layouts/dashboard (0.2ms)
+Completed 200 OK in 13ms (Views: 11.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ask" for 127.0.0.1 at 2012-10-28 10:20:16 -0700
+Processing by QuestionsController#ask as HTML
+  Rendered questions/ask.html.erb within layouts/dashboard (0.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-28 10:20:17 -0700
+Processing by SessionsController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."user_id" = 1048612677
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT "questions".* FROM "questions" ORDER BY created_at DESC LIMIT 10[0m
+  Rendered pages/index.html.erb within layouts/dashboard (0.2ms)
+Completed 200 OK in 11ms (Views: 8.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/question/What-the-the-best-company-in-Silicon-Valley" for 127.0.0.1 at 2012-10-28 10:20:18 -0700
+Processing by QuestionsController#display as HTML
+  Parameters: {"slug"=>"What-the-the-best-company-in-Silicon-Valley"}
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."slug" = 'What-the-the-best-company-in-Silicon-Valley' LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = 1048612677 LIMIT 1[0m
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions" ORDER BY created_at DESC LIMIT 10
+  Rendered questions/display.html.erb within layouts/dashboard (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-28 10:20:20 -0700
+Processing by SessionsController#home as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions" WHERE "questions"."user_id" = 1048612677[0m
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions" ORDER BY created_at DESC LIMIT 10
+  Rendered pages/index.html.erb within layouts/dashboard (0.2ms)
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/question/What-the-the-best-company-in-Silicon-Valley" for 127.0.0.1 at 2012-10-28 10:20:22 -0700
+Processing by QuestionsController#display as HTML
+  Parameters: {"slug"=>"What-the-the-best-company-in-Silicon-Valley"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT "questions".* FROM "questions" WHERE "questions"."slug" = 'What-the-the-best-company-in-Silicon-Valley' LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."uid" = 1048612677 LIMIT 1
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions" ORDER BY created_at DESC LIMIT 10[0m
+  Rendered questions/display.html.erb within layouts/dashboard (0.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 32ms (Views: 30.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-28 10:20:23 -0700
+Processing by SessionsController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."user_id" = 1048612677
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions" ORDER BY created_at DESC LIMIT 10[0m
+  Rendered pages/index.html.erb within layouts/dashboard (0.2ms)
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/question/Is-Caltech-on-par-with-universities-like-MIT-Harvard-and-Stanford" for 127.0.0.1 at 2012-10-28 10:20:25 -0700
+Processing by QuestionsController#display as HTML
+  Parameters: {"slug"=>"Is-Caltech-on-par-with-universities-like-MIT-Harvard-and-Stanford"}
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."slug" = 'Is-Caltech-on-par-with-universities-like-MIT-Harvard-and-Stanford' LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = 1048612677 LIMIT 1[0m
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions" ORDER BY created_at DESC LIMIT 10
+  Rendered questions/display.html.erb within layouts/dashboard (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-28 10:20:26 -0700
+Processing by SessionsController#home as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT "questions".* FROM "questions" WHERE "questions"."user_id" = 1048612677[0m
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions" ORDER BY created_at DESC LIMIT 10
+  Rendered pages/index.html.erb within layouts/dashboard (0.2ms)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/question/Which-University-is-best-to-recruit-Computer-Science-majors-from-and-why" for 127.0.0.1 at 2012-10-28 10:20:27 -0700
+Processing by QuestionsController#display as HTML
+  Parameters: {"slug"=>"Which-University-is-best-to-recruit-Computer-Science-majors-from-and-why"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT "questions".* FROM "questions" WHERE "questions"."slug" = 'Which-University-is-best-to-recruit-Computer-Science-majors-from-and-why' LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."uid" = 1048612677 LIMIT 1
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT "questions".* FROM "questions" ORDER BY created_at DESC LIMIT 10[0m
+  Rendered questions/display.html.erb within layouts/dashboard (0.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-10-28 10:20:29 -0700
+Processing by SessionsController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."user_id" = 1048612677
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions" ORDER BY created_at DESC LIMIT 10[0m
+  Rendered pages/index.html.erb within layouts/dashboard (0.2ms)
+Completed 200 OK in 31ms (Views: 29.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-10-28 10:20:29 -0700
+Served asset /style.css - 304 Not Modified (0ms)

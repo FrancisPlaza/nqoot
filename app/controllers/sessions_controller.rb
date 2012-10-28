@@ -2,6 +2,8 @@ class SessionsController < ApplicationController
   
   def home
     if current_user
+      @questions = Question.where(:user_id => current_user.uid).all
+      @recent_questions = Question.all(:order => 'created_at DESC', :limit => 10)
       render :layout => 'dashboard', :template => 'pages/index'
     end
   end

@@ -1,0 +1,19 @@
+<div class="spacer container">
+  <div class="row">
+    <div class="span8">
+      <h1>Your Questions</h1>
+      <table class="table table-striped table-hover">
+        <% @questions.each do |question| %>
+        <tr><td><a href="/question/<%= question.slug %>"><%= question.question %></a></td></tr>
+        <% end %>
+      </table>
+    </div>
+    <div class="span1"></div>
+    <div class="span3">
+      <h5>Recent Questions</h5>
+      <% @recent_questions.each do |question| %>
+      <p><strong><a href="/question/<%= question.slug %>"><%= question.question %></a></strong></p>
+      <% end %>
+    </div>
+  </div>
+</div>
