@@ -1,4 +1,8 @@
-<div class="question container">
+<% content_for :head do %>
+<title><%= @question.question %> - nQoot</title>
+<% end %>
+
+<div class="dash container">
     <div class="row">
       <div class="span1">
         <% if not @question.anonimity %>
@@ -8,15 +12,44 @@
         <% end %>
       </div>
       <div class="span7">
-        <span class="question-text"><%= @question.question %></span>
-        <span class="question-desc"><%= @question.description %></span>
-        <span class="question-auth">
-        <% if @question.anonimity %>
-          by Anonymous created on <%= @question.created_at %>
-        <% else %>
-          by <%= @user.name %> created on <%= @question.created_at %>
+        
+        <div id="question-area">
+          <span class="question-text"><%= @question.question %></span>
+          <span class="question-desc"><%= @question.description %></span>
+          <div class="display-auth"><p>
+          <% if @question.anonimity %>
+            by Anonymous
+          <% else %>
+            by <%= @user.name %>
+          <% end %>
+          created on <%= @question.created_at.in_time_zone('Eastern Time (US & Canada)').strftime('%A, %B %d, %Y at %I:%M %p %Z') %></p></div>
+        </div>
+        
+        <div id="answers-panel">
+        <% @answers.each do |answer| %>
+        <% user = User.find_by_uid(answer.user_id) %>
+          <div class="answer-area">
+            <span><strong>
+              <% if answer.anonimity %>
+                Anonymous
+              <% else %>
+                <%= user.name %>
+              <% end %>
+            </strong></span>
+            <p id="answer-text-display"><%= answer.answer %></p>
+            <div class="display-auth"><p>Posted on <%= answer.created_at.in_time_zone('Eastern Time (US & Canada)').strftime('%A, %B %d, %Y at %I:%M %p %Z') %></p></div>
+          </div>
         <% end %>
-      </span>
+      </div>
+       
+        <div id="input-answer-area">
+          <h5>Add Answer</h5>
+          <textarea id="answer-text" name="answer-text" class="span7" rows="5"></textarea>
+          <input id="anon-answer" name="anon-answer" type="checkbox"> <small>I'm shy, post answer anonymously</small>
+          <input type="hidden" name="question-id" id="question-id" value="<%= @question.id %>">
+          <a id="add-answer" class="btn btn-info pull-right">Add Answer</a>
+        </div>
+
       </div>
       <div class="span1">
       </div>

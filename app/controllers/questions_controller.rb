@@ -16,6 +16,10 @@ class QuestionsController < ApplicationController
     if @question
       @user = User.find_by_uid(@question.user_id)
       @recent_questions = Question.all(:order => 'created_at DESC', :limit => 10)
+      
+      # get all answers to question
+      @answers = Answer.where(:question_id => @question.id).all
+      
       render :layout => 'dashboard'
     else
       redirect_to root_url

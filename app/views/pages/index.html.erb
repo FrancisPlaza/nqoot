@@ -1,4 +1,8 @@
-<div class="spacer container">
+<% content_for :head do %>
+<title><%= current_user.name %> - nQoot</title>
+<% end %>
+
+<div class="dash container">
   <div class="row">
     <div class="span8">
       <h1>Your Questions</h1>

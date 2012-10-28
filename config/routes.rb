@@ -1,4 +1,6 @@
 EfcplazaProj3::Application.routes.draw do
+  # get "answers/create"
+
   # get "users/index"
 
   # get "sessions/create"
@@ -13,6 +15,8 @@ EfcplazaProj3::Application.routes.draw do
   match 'ask', to: 'questions#ask'
   match 'add/question', to: 'questions#create'
   match 'question/:slug', to: 'questions#display'
+  
+  match 'add/answer', to: 'answers#create'
   
   #match 'dashboard', to: 'dashboard#index'
   
