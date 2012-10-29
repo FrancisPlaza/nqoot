@@ -54334,3 +54334,137 @@ Migrating to AddUidToUsers (20121029030223)
   [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_sessions_on_session_id')[0m
   [1m[35m (0.0ms)[0m  PRAGMA index_list("users")
   [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("votes")[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to AddSessionsTable (20121022213000)
+Migrating to CreateUsers (20121022213905)
+Migrating to CreateQuestions (20121024013725)
+Migrating to AddSlugToQuestions (20121024025119)
+Migrating to CreateAnswers (20121028180703)
+Migrating to CreateVotes (20121029021938)
+Migrating to RemoveDescriptionFromQuestions (20121029025413)
+Migrating to AddDescriptionToQuestions (20121029025445)
+Migrating to RemoveUidFromUsers (20121029030200)
+Migrating to AddUidToUsers (20121029030223)
+Migrating to RemoveUserIdFromQuestions (20121029030838)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TEMPORARY TABLE "altered_questions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "question" varchar(255), "anonimity" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "slug" varchar(255), "description" text) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("questions")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "questions"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "altered_questions" ("id","question","anonimity","user_id","created_at","updated_at","slug","description") VALUES (1, 'What is the meaning of life?', 'f', 1048612677, '2012-10-24 03:23:55.883598', '2012-10-24 03:23:55.883598', 'What-is-the-meaning-of-life', NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "altered_questions" ("id","question","anonimity","user_id","created_at","updated_at","slug","description") VALUES (2, 'Is Caltech on par with universities like MIT, Harvard, and Stanford?', 'f', 1048612677, '2012-10-24 03:54:12.014304', '2012-10-24 03:54:12.014304', 'Is-Caltech-on-par-with-universities-like-MIT-Harvard-and-Stanford', NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "altered_questions" ("id","question","anonimity","user_id","created_at","updated_at","slug","description") VALUES (3, 'Which University is best to recruit Computer Science majors from and why?', 't', 1048612677, '2012-10-24 04:15:51.280573', '2012-10-24 04:15:51.280573', 'Which-University-is-best-to-recruit-Computer-Science-majors-from-and-why', NULL)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_questions" ("id","question","anonimity","user_id","created_at","updated_at","slug","description") VALUES (4, 'What the the best company in Silicon Valley?', 'f', 1048612677, '2012-10-28 17:19:55.161769', '2012-10-28 17:19:55.161769', 'What-the-the-best-company-in-Silicon-Valley', NULL)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_questions" ("id","question","anonimity","user_id","created_at","updated_at","slug","description") VALUES (5, 'What is the capital of USA?', 'f', 1048612677, '2012-10-28 21:20:38.081468', '2012-10-28 21:20:38.081468', 'What-is-the-capital-of-USA', NULL)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_questions" ("id","question","anonimity","user_id","created_at","updated_at","slug","description") VALUES (6, 'Why is Hurricane Sandy called a super storm?', 'f', 100004591475376, '2012-10-29 01:32:40.922438', '2012-10-29 01:32:40.922438', 'Why-is-Hurricane-Sandy-called-a-super-storm', NULL)
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "questions"[0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "questions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "question" varchar(255), "anonimity" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "slug" varchar(255), "description" text) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("altered_questions")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "altered_questions"
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "questions" ("id","question","anonimity","created_at","updated_at","slug","description") VALUES (1, 'What is the meaning of life?', 'f', '2012-10-24 03:23:55.883598', '2012-10-24 03:23:55.883598', 'What-is-the-meaning-of-life', NULL)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "questions" ("id","question","anonimity","created_at","updated_at","slug","description") VALUES (2, 'Is Caltech on par with universities like MIT, Harvard, and Stanford?', 'f', '2012-10-24 03:54:12.014304', '2012-10-24 03:54:12.014304', 'Is-Caltech-on-par-with-universities-like-MIT-Harvard-and-Stanford', NULL)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "questions" ("id","question","anonimity","created_at","updated_at","slug","description") VALUES (3, 'Which University is best to recruit Computer Science majors from and why?', 't', '2012-10-24 04:15:51.280573', '2012-10-24 04:15:51.280573', 'Which-University-is-best-to-recruit-Computer-Science-majors-from-and-why', NULL)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "questions" ("id","question","anonimity","created_at","updated_at","slug","description") VALUES (4, 'What the the best company in Silicon Valley?', 'f', '2012-10-28 17:19:55.161769', '2012-10-28 17:19:55.161769', 'What-the-the-best-company-in-Silicon-Valley', NULL)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "questions" ("id","question","anonimity","created_at","updated_at","slug","description") VALUES (5, 'What is the capital of USA?', 'f', '2012-10-28 21:20:38.081468', '2012-10-28 21:20:38.081468', 'What-is-the-capital-of-USA', NULL)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "questions" ("id","question","anonimity","created_at","updated_at","slug","description") VALUES (6, 'Why is Hurricane Sandy called a super storm?', 'f', '2012-10-29 01:32:40.922438', '2012-10-29 01:32:40.922438', 'Why-is-Hurricane-Sandy-called-a-super-storm', NULL)
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "altered_questions"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20121029030838')
+  [1m[36m (48.3ms)[0m  [1mcommit transaction[0m
+Migrating to AddUserIdToQuestions (20121029030902)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "questions" ADD "user_id" varchar(255)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20121029030902')
+  [1m[36m (6.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("answers")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("questions")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("sessions")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_sessions_on_updated_at')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_sessions_on_session_id')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("votes")
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to AddSessionsTable (20121022213000)
+Migrating to CreateUsers (20121022213905)
+Migrating to CreateQuestions (20121024013725)
+Migrating to AddSlugToQuestions (20121024025119)
+Migrating to CreateAnswers (20121028180703)
+Migrating to CreateVotes (20121029021938)
+Migrating to RemoveDescriptionFromQuestions (20121029025413)
+Migrating to AddDescriptionToQuestions (20121029025445)
+Migrating to RemoveUidFromUsers (20121029030200)
+Migrating to AddUidToUsers (20121029030223)
+Migrating to RemoveUserIdFromQuestions (20121029030838)
+Migrating to AddUserIdToQuestions (20121029030902)
+Migrating to RemoveUserIdFromAnswers (20121029030931)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TEMPORARY TABLE "altered_answers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "answer" varchar(255), "user_id" integer, "anonimity" boolean, "question_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("answers")[0m
+  [1m[35m (0.2ms)[0m  SELECT * FROM "answers"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "altered_answers" ("id","answer","user_id","anonimity","question_id","created_at","updated_at") VALUES (1, 'MIT is the best.', 1048612677, 'f', 3, '2012-10-28 20:08:29.836327', '2012-10-28 20:08:29.836327')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_answers" ("id","answer","user_id","anonimity","question_id","created_at","updated_at") VALUES (2, 'I think Stanford would be good too.', 1048612677, 'f', 3, '2012-10-28 20:16:27.141707', '2012-10-28 20:16:27.141707')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_answers" ("id","answer","user_id","anonimity","question_id","created_at","updated_at") VALUES (3, 'While I was watching this TED talk, my sister, who happens to be a doctor, told me to stop watching because what the speaker described was clearly not neuroscience. She was visibly disgusted, a reaction that subsequently many of her doctor friends shared. According to them, no neuroscientist worth her salt would ascribe to the left-brain, right-brain theory. There were more points of criticism which I fail to recall, but the consensus was that the speaker is at best a great raconteur and at worst, a quack.', 1048612677, 'f', 3, '2012-10-28 20:20:28.873972', '2012-10-28 20:20:28.873972')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_answers" ("id","answer","user_id","anonimity","question_id","created_at","updated_at") VALUES (4, 'Another answer here.', 1048612677, 'f', 3, '2012-10-28 20:28:53.627604', '2012-10-28 20:28:53.627604')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_answers" ("id","answer","user_id","anonimity","question_id","created_at","updated_at") VALUES (5, 'One more another answer.', 1048612677, 'f', 3, '2012-10-28 20:31:24.430596', '2012-10-28 20:31:24.430596')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_answers" ("id","answer","user_id","anonimity","question_id","created_at","updated_at") VALUES (6, 'Test answer.', 1048612677, 'f', 3, '2012-10-28 20:36:49.467599', '2012-10-28 20:36:49.467599')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_answers" ("id","answer","user_id","anonimity","question_id","created_at","updated_at") VALUES (7, 'testing', 1048612677, 'f', 3, '2012-10-28 20:39:56.113926', '2012-10-28 20:39:56.113926')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_answers" ("id","answer","user_id","anonimity","question_id","created_at","updated_at") VALUES (8, 'MIT is still the best.', 1048612677, 'f', 2, '2012-10-28 20:40:22.669199', '2012-10-28 20:40:22.669199')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_answers" ("id","answer","user_id","anonimity","question_id","created_at","updated_at") VALUES (9, 'hello there', 1048612677, 'f', 3, '2012-10-28 20:48:27.129540', '2012-10-28 20:48:27.129540')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_answers" ("id","answer","user_id","anonimity","question_id","created_at","updated_at") VALUES (10, 'what''s up??', 1048612677, 'f', 3, '2012-10-28 20:48:39.950251', '2012-10-28 20:48:39.950251')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_answers" ("id","answer","user_id","anonimity","question_id","created_at","updated_at") VALUES (11, 'Oracle in Redwood Shores.', 1048612677, 'f', 4, '2012-10-28 21:01:58.237326', '2012-10-28 21:01:58.237326')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_answers" ("id","answer","user_id","anonimity","question_id","created_at","updated_at") VALUES (13, 'I agree with the commenter above.', 1048612677, 'f', 2, '2012-10-28 21:30:53.402334', '2012-10-28 21:30:53.402334')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "altered_answers" ("id","answer","user_id","anonimity","question_id","created_at","updated_at") VALUES (15, 'Berkeley.', 1048612677, 't', 2, '2012-10-28 21:35:57.913651', '2012-10-28 21:35:57.913651')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_answers" ("id","answer","user_id","anonimity","question_id","created_at","updated_at") VALUES (16, 'Caltech.', 1048612677, 't', 2, '2012-10-28 21:37:26.127283', '2012-10-28 21:37:26.127283')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_answers" ("id","answer","user_id","anonimity","question_id","created_at","updated_at") VALUES (17, '42.', 1048612677, 'f', 1, '2012-10-28 21:43:14.084356', '2012-10-28 21:43:14.084356')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_answers" ("id","answer","user_id","anonimity","question_id","created_at","updated_at") VALUES (20, 'Testing here.', 1048612677, 'f', 3, '2012-10-29 00:14:32.552070', '2012-10-29 00:14:32.552070')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_answers" ("id","answer","user_id","anonimity","question_id","created_at","updated_at") VALUES (29, 'That is right.', 100004591475376, 'f', 4, '2012-10-29 01:31:36.200854', '2012-10-29 01:31:36.200854')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_answers" ("id","answer","user_id","anonimity","question_id","created_at","updated_at") VALUES (30, 'Because it''s strong enough to be called a super storm.', 1048612677, 'f', 6, '2012-10-29 01:33:07.821823', '2012-10-29 01:33:07.821823')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_answers" ("id","answer","user_id","anonimity","question_id","created_at","updated_at") VALUES (31, 'Washington, D.C', 100004591475376, 'f', 5, '2012-10-29 01:36:42.246293', '2012-10-29 01:36:42.246293')[0m
+  [1m[35m (0.4ms)[0m  DROP TABLE "answers"
+  [1m[36m (0.1ms)[0m  [1mCREATE TABLE "answers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "answer" varchar(255), "anonimity" boolean, "question_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("altered_answers")
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "altered_answers"[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "answers" ("id","answer","anonimity","question_id","created_at","updated_at") VALUES (1, 'MIT is the best.', 'f', 3, '2012-10-28 20:08:29.836327', '2012-10-28 20:08:29.836327')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "answers" ("id","answer","anonimity","question_id","created_at","updated_at") VALUES (2, 'I think Stanford would be good too.', 'f', 3, '2012-10-28 20:16:27.141707', '2012-10-28 20:16:27.141707')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "answers" ("id","answer","anonimity","question_id","created_at","updated_at") VALUES (3, 'While I was watching this TED talk, my sister, who happens to be a doctor, told me to stop watching because what the speaker described was clearly not neuroscience. She was visibly disgusted, a reaction that subsequently many of her doctor friends shared. According to them, no neuroscientist worth her salt would ascribe to the left-brain, right-brain theory. There were more points of criticism which I fail to recall, but the consensus was that the speaker is at best a great raconteur and at worst, a quack.', 'f', 3, '2012-10-28 20:20:28.873972', '2012-10-28 20:20:28.873972')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "answers" ("id","answer","anonimity","question_id","created_at","updated_at") VALUES (4, 'Another answer here.', 'f', 3, '2012-10-28 20:28:53.627604', '2012-10-28 20:28:53.627604')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "answers" ("id","answer","anonimity","question_id","created_at","updated_at") VALUES (5, 'One more another answer.', 'f', 3, '2012-10-28 20:31:24.430596', '2012-10-28 20:31:24.430596')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "answers" ("id","answer","anonimity","question_id","created_at","updated_at") VALUES (6, 'Test answer.', 'f', 3, '2012-10-28 20:36:49.467599', '2012-10-28 20:36:49.467599')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "answers" ("id","answer","anonimity","question_id","created_at","updated_at") VALUES (7, 'testing', 'f', 3, '2012-10-28 20:39:56.113926', '2012-10-28 20:39:56.113926')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "answers" ("id","answer","anonimity","question_id","created_at","updated_at") VALUES (8, 'MIT is still the best.', 'f', 2, '2012-10-28 20:40:22.669199', '2012-10-28 20:40:22.669199')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "answers" ("id","answer","anonimity","question_id","created_at","updated_at") VALUES (9, 'hello there', 'f', 3, '2012-10-28 20:48:27.129540', '2012-10-28 20:48:27.129540')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "answers" ("id","answer","anonimity","question_id","created_at","updated_at") VALUES (10, 'what''s up??', 'f', 3, '2012-10-28 20:48:39.950251', '2012-10-28 20:48:39.950251')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "answers" ("id","answer","anonimity","question_id","created_at","updated_at") VALUES (11, 'Oracle in Redwood Shores.', 'f', 4, '2012-10-28 21:01:58.237326', '2012-10-28 21:01:58.237326')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "answers" ("id","answer","anonimity","question_id","created_at","updated_at") VALUES (13, 'I agree with the commenter above.', 'f', 2, '2012-10-28 21:30:53.402334', '2012-10-28 21:30:53.402334')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "answers" ("id","answer","anonimity","question_id","created_at","updated_at") VALUES (15, 'Berkeley.', 't', 2, '2012-10-28 21:35:57.913651', '2012-10-28 21:35:57.913651')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "answers" ("id","answer","anonimity","question_id","created_at","updated_at") VALUES (16, 'Caltech.', 't', 2, '2012-10-28 21:37:26.127283', '2012-10-28 21:37:26.127283')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "answers" ("id","answer","anonimity","question_id","created_at","updated_at") VALUES (17, '42.', 'f', 1, '2012-10-28 21:43:14.084356', '2012-10-28 21:43:14.084356')
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "answers" ("id","answer","anonimity","question_id","created_at","updated_at") VALUES (20, 'Testing here.', 'f', 3, '2012-10-29 00:14:32.552070', '2012-10-29 00:14:32.552070')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "answers" ("id","answer","anonimity","question_id","created_at","updated_at") VALUES (29, 'That is right.', 'f', 4, '2012-10-29 01:31:36.200854', '2012-10-29 01:31:36.200854')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "answers" ("id","answer","anonimity","question_id","created_at","updated_at") VALUES (30, 'Because it''s strong enough to be called a super storm.', 'f', 6, '2012-10-29 01:33:07.821823', '2012-10-29 01:33:07.821823')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "answers" ("id","answer","anonimity","question_id","created_at","updated_at") VALUES (31, 'Washington, D.C', 'f', 5, '2012-10-29 01:36:42.246293', '2012-10-29 01:36:42.246293')
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "altered_answers"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20121029030931')
+  [1m[36m (58.0ms)[0m  [1mcommit transaction[0m
+Migrating to AddUserIdToAnswers (20121029030950)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "answers" ADD "user_id" varchar(255)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20121029030950')
+  [1m[36m (19.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.9ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("answers")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("questions")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("sessions")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_sessions_on_updated_at')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_sessions_on_session_id')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("votes")
