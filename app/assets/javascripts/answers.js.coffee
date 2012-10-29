@@ -3,7 +3,7 @@
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 
 $ ->
-  HOSTNAME = 'localhost:3000'
+  HOSTNAME = 'nqoot.francis.ph'
   
   $('.delete_answer').live 'click', () ->
     url = 'http://' + HOSTNAME + '/delete'

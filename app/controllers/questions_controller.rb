@@ -7,7 +7,7 @@ class QuestionsController < ApplicationController
     if current_user
       uid = current_user.uid
       slug = Question.add_question(params, uid)
-      render :text => 'http://localhost:3000/question/' + slug
+      render :text => 'http://nqoot.francis.ph/question/' + slug
     end
   end
   
