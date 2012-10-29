@@ -54176,3 +54176,75 @@ Migrating to CreateVotes (20121029021938)
   [1m[35m (0.0ms)[0m  PRAGMA index_list("users")
   [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("votes")[0m
 Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to AddSessionsTable (20121022213000)
+Migrating to CreateUsers (20121022213905)
+Migrating to CreateQuestions (20121024013725)
+Migrating to AddSlugToQuestions (20121024025119)
+Migrating to CreateAnswers (20121028180703)
+Migrating to RemoveUidFromUsers (20121029003334)
+Migrating to AddUidToUsers (20121029003402)
+Migrating to CreateVotes (20121029021938)
+Migrating to RemoveDescriptionFromQuestions (20121029025413)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TEMPORARY TABLE "altered_questions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "question" varchar(255), "description" varchar(255), "anonimity" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "slug" varchar(255)) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("questions")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "questions"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "altered_questions" ("id","question","description","anonimity","user_id","created_at","updated_at","slug") VALUES (1, 'What is the meaning of life?', 'I am just curious.', 'f', 1048612677, '2012-10-24 03:23:55.883598', '2012-10-24 03:23:55.883598', 'What-is-the-meaning-of-life')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "altered_questions" ("id","question","description","anonimity","user_id","created_at","updated_at","slug") VALUES (2, 'Is Caltech on par with universities like MIT, Harvard, and Stanford?', 'I''m thinking mostly about career opportunities for undergrads in STEM majors, but broader answers are welcome.', 'f', 1048612677, '2012-10-24 03:54:12.014304', '2012-10-24 03:54:12.014304', 'Is-Caltech-on-par-with-universities-like-MIT-Harvard-and-Stanford')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "altered_questions" ("id","question","description","anonimity","user_id","created_at","updated_at","slug") VALUES (3, 'Which University is best to recruit Computer Science majors from and why?', 'Perhaps go into personal experience, curriculum, faculty, etc.', 't', 1048612677, '2012-10-24 04:15:51.280573', '2012-10-24 04:15:51.280573', 'Which-University-is-best-to-recruit-Computer-Science-majors-from-and-why')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_questions" ("id","question","description","anonimity","user_id","created_at","updated_at","slug") VALUES (4, 'What the the best company in Silicon Valley?', 'I am visiting the Bay area and would like to visit the best companies around.', 'f', 1048612677, '2012-10-28 17:19:55.161769', '2012-10-28 17:19:55.161769', 'What-the-the-best-company-in-Silicon-Valley')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "altered_questions" ("id","question","description","anonimity","user_id","created_at","updated_at","slug") VALUES (5, 'What is the capital of USA?', 'Curious.', 'f', 1048612677, '2012-10-28 21:20:38.081468', '2012-10-28 21:20:38.081468', 'What-is-the-capital-of-USA')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "altered_questions" ("id","question","description","anonimity","user_id","created_at","updated_at","slug") VALUES (6, 'Why is Hurricane Sandy called a super storm?', 'The east coast is hit.', 'f', 100004591475376, '2012-10-29 01:32:40.922438', '2012-10-29 01:32:40.922438', 'Why-is-Hurricane-Sandy-called-a-super-storm')
+  [1m[36m (0.5ms)[0m  [1mDROP TABLE "questions"[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "questions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "question" varchar(255), "anonimity" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "slug" varchar(255)) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("altered_questions")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "altered_questions"
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "questions" ("id","question","anonimity","user_id","created_at","updated_at","slug") VALUES (1, 'What is the meaning of life?', 'f', 1048612677, '2012-10-24 03:23:55.883598', '2012-10-24 03:23:55.883598', 'What-is-the-meaning-of-life')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "questions" ("id","question","anonimity","user_id","created_at","updated_at","slug") VALUES (2, 'Is Caltech on par with universities like MIT, Harvard, and Stanford?', 'f', 1048612677, '2012-10-24 03:54:12.014304', '2012-10-24 03:54:12.014304', 'Is-Caltech-on-par-with-universities-like-MIT-Harvard-and-Stanford')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "questions" ("id","question","anonimity","user_id","created_at","updated_at","slug") VALUES (3, 'Which University is best to recruit Computer Science majors from and why?', 't', 1048612677, '2012-10-24 04:15:51.280573', '2012-10-24 04:15:51.280573', 'Which-University-is-best-to-recruit-Computer-Science-majors-from-and-why')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "questions" ("id","question","anonimity","user_id","created_at","updated_at","slug") VALUES (4, 'What the the best company in Silicon Valley?', 'f', 1048612677, '2012-10-28 17:19:55.161769', '2012-10-28 17:19:55.161769', 'What-the-the-best-company-in-Silicon-Valley')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "questions" ("id","question","anonimity","user_id","created_at","updated_at","slug") VALUES (5, 'What is the capital of USA?', 'f', 1048612677, '2012-10-28 21:20:38.081468', '2012-10-28 21:20:38.081468', 'What-is-the-capital-of-USA')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "questions" ("id","question","anonimity","user_id","created_at","updated_at","slug") VALUES (6, 'Why is Hurricane Sandy called a super storm?', 'f', 100004591475376, '2012-10-29 01:32:40.922438', '2012-10-29 01:32:40.922438', 'Why-is-Hurricane-Sandy-called-a-super-storm')
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "altered_questions"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20121029025413')
+  [1m[36m (26.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("answers")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("questions")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("sessions")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_sessions_on_updated_at')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_sessions_on_session_id')
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("votes")
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to AddSessionsTable (20121022213000)
+Migrating to CreateUsers (20121022213905)
+Migrating to CreateQuestions (20121024013725)
+Migrating to AddSlugToQuestions (20121024025119)
+Migrating to CreateAnswers (20121028180703)
+Migrating to RemoveUidFromUsers (20121029003334)
+Migrating to AddUidToUsers (20121029003402)
+Migrating to CreateVotes (20121029021938)
+Migrating to RemoveDescriptionFromQuestions (20121029025413)
+Migrating to AddDescriptionToQuestions (20121029025445)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  ALTER TABLE "questions" ADD "description" text
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121029025445')[0m
+  [1m[35m (48.6ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("answers")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("questions")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("sessions")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_sessions_on_updated_at')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_sessions_on_session_id')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("votes")[0m
