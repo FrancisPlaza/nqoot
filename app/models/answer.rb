@@ -1,5 +1,6 @@
 class Answer < ActiveRecord::Base
   attr_accessible :anonimity, :answer, :question_id, :user_id
+  belongs_to :question
   
   def self.add_answer(params, uid)
     answer = Answer.new

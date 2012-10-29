@@ -85,7 +85,6 @@ textarea {
 
 .answer-area {
   border-top: 1px solid #E0E0E0;
-  margin-top: 25px;
   padding-top: 10px;
 }
 
@@ -94,10 +93,20 @@ textarea {
   line-height: 18px;
 }
 
+.answer-vote {
+  display: block;
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.answer-vote i {
+  cursor: pointer;
+}
+
 #input-answer-area {
   border-top: 1px solid #E0E0E0;
-  margin-top: 30px;
   padding-top: 20px;
+  margin-bottom: 60px;
 }
 
 #input-answer-area h5 {

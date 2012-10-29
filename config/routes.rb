@@ -17,6 +17,7 @@ EfcplazaProj3::Application.routes.draw do
   match 'question/:slug', to: 'questions#display'
   
   match 'add/answer', to: 'answers#create'
+  match 'delete', to: 'answers#delete'
   
   #match 'dashboard', to: 'dashboard#index'
   
