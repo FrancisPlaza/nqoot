@@ -24,4 +24,11 @@ class AnswersController < ApplicationController
     end
   end
   
+  def vote
+    vote = Vote.where(:user_id => current_user.uid, :answer_id => params[:answer_id]).all
+    if vote.length == 0
+      vote.add_vote(params, current_user.uid)
+    end
+  end
+  
 end
