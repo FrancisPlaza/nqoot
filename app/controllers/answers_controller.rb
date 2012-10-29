@@ -18,7 +18,7 @@ class AnswersController < ApplicationController
   
   def delete
     answer = Answer.find_by_id(params[:id])
-    if answer.user_id == current_user.uid
+    if answer.user_id == current_user.uid.to_i
       answer.destroy
       render :nothing => true
     end

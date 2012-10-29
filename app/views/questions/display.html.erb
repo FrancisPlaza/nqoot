@@ -37,7 +37,7 @@
               <% end %>
             </strong></span>
             <span class="answer-vote">
-              <% if not current_user.uid == answer.user_id %>
+              <% if not current_user.uid.to_i == answer.user_id %>
                 <i class="icon-circle-arrow-up"></i>
               <% end %>
               <small><strong>0</strong> votes</small></span>
