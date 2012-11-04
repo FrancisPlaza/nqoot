@@ -19,6 +19,8 @@ EfcplazaProj3::Application.routes.draw do
   match 'add/answer', to: 'answers#create'
   match 'delete', to: 'answers#delete'
   
+  match 'get/answers', to: 'answers#show'
+  
   #match 'dashboard', to: 'dashboard#index'
   
   root :to => 'sessions#home'

@@ -1,0 +1,24 @@
+<% @answers.each do |answer| %>
+<% user = User.find_by_uid(answer.user_id) %>
+  <div id="answer-<%= answer.id %>" class="answer-area">
+    <span><strong>
+      <% if answer.anonimity %>
+        Anonymous
+      <% else %>
+        <%= user.name %>
+      <% end %>
+    </strong></span>
+    <span class="answer-vote">
+      <% if not current_user.uid == answer.user_id %>
+        <i class="icon-circle-arrow-up"></i>
+      <% end %>
+      <small><strong>0</strong> votes</small></span>
+    <p id="answer-text-display"><%= answer.answer %></p>
+    <div class="display-auth"><p>Posted on <%= answer.created_at.in_time_zone('Eastern Time (US & Canada)').strftime('%A, %B %d, %Y at %I:%M %p %Z') %>
+      <% if current_user.uid == answer.user_id %>
+      <!-- Not implemented yet -->
+      <!--| <a id="<%= answer.id %>" class="delete_answer" style="cursor: pointer;">Delete</a>-->
+      <% end %>
+    </p></div>
+  </div>
+<% end %>
