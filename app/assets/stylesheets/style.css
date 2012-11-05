@@ -77,6 +77,8 @@ textarea {
 .display-auth {
   padding-top: 15px;
   padding-bottom: 1px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .display-auth p {
@@ -87,6 +89,11 @@ textarea {
 .answer-area {
   border-top: 1px solid #E0E0E0;
   padding-top: 10px;
+}
+
+.answer-area span {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 #answer-text-display {
