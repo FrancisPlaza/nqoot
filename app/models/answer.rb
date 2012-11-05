@@ -9,6 +9,7 @@ class Answer < ActiveRecord::Base
     answer.question_id = params[:question_id]
     answer.user_id = uid
     answer.vote = 0
+    answer.is_staff_endorsed = false
     answer.save!
     return answer
   end

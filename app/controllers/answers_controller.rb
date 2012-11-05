@@ -14,9 +14,20 @@ class AnswersController < ApplicationController
   end
   
   def vote
-    answer = Answer.find_by_id(params[:answer_id])
-    answer.vote += 1
-    answer.save!
+    if current_user
+      answer = Answer.find_by_id(params[:answer_id])
+      answer.vote += 1
+      answer.save!
+    end
+    redirect_to :back
+  end
+  
+  def endorse
+    if current_user.is_staff
+      answer = Answer.find_by_id(params[:answer_id])
+      answer.is_staff_endorsed = true
+      answer.save!
+    end
     redirect_to :back
   end
   

@@ -11,16 +11,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121105021631) do
+ActiveRecord::Schema.define(:version => 20121105023122) do
 
   create_table "answers", :force => true do |t|
     t.string   "answer"
     t.boolean  "anonimity"
     t.integer  "question_id"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
     t.string   "user_id"
     t.integer  "vote"
+    t.boolean  "is_staff_endorsed"
   end
 
   create_table "questions", :force => true do |t|

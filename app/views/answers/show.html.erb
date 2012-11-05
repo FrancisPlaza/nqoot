@@ -1,6 +1,6 @@
 <% @answers.each do |answer| %>
 <% user = User.find_by_uid(answer.user_id) %>
-  <div id="answer-<%= answer.id %>" class="answer-area" style="">
+  <div id="answer-<%= answer.id %>" class="answer-area" <% if answer.is_staff_endorsed %> style="background-color:#CCFFFF;" <% end %>>
     <span><strong>
       <% if answer.anonimity %>
         Anonymous
@@ -10,7 +10,9 @@
     </strong></span>
     <span class="answer-vote">
       <% if current_user.is_staff %>
-        <a href="#" class="icon-ok"></a>
+        <% if not answer.is_staff_endorsed %>
+          <a href="/answer/endorse/<%= answer.id %>" class="icon-ok"></a>
+        <% end %>
       <% end %>
       <% if not current_user.uid == answer.user_id %>
         <a href="/answer/vote/<%= answer.id %>" class="icon-circle-arrow-up"></a>
