@@ -11,10 +11,9 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121105023122) do
+ActiveRecord::Schema.define(:version => 20121105031457) do
 
   create_table "answers", :force => true do |t|
-    t.string   "answer"
     t.boolean  "anonimity"
     t.integer  "question_id"
     t.datetime "created_at",        :null => false
@@ -22,6 +21,7 @@ ActiveRecord::Schema.define(:version => 20121105023122) do
     t.string   "user_id"
     t.integer  "vote"
     t.boolean  "is_staff_endorsed"
+    t.text     "answer"
   end
 
   create_table "questions", :force => true do |t|
