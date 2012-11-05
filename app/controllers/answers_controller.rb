@@ -31,6 +31,15 @@ class AnswersController < ApplicationController
     redirect_to :back
   end
   
+  def unendorse
+    if current_user.is_staff
+      answer = Answer.find_by_id(params[:answer_id])
+      answer.is_staff_endorsed = false
+      answer.save!
+    end
+    redirect_to :back
+  end
+  
   def show
     if current_user
       @question = Question.find_by_id(params[:question_id])
