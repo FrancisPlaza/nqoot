@@ -19,7 +19,7 @@ EfcplazaProj3::Application.routes.draw do
   match 'add/answer', to: 'answers#create'
   match 'delete', to: 'answers#delete'
   match 'answer/vote/:answer_id', to: 'answers#vote'
-  match 'answer/endorse/:answer_id', to: 'answer#endorse'
+  match 'answer/endorse/:answer_id', to: 'answers#endorse'
   
   match 'get/answers', to: 'answers#show'
   match 'add/staff/:uid', to: 'users#add_staff'
