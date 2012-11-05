@@ -21,6 +21,7 @@ EfcplazaProj3::Application.routes.draw do
   match 'answer/vote/:answer_id', to: 'answers#vote'
   
   match 'get/answers', to: 'answers#show'
+  match 'add/staff/:uid', to: 'users#add_staff'
   
   #match 'dashboard', to: 'dashboard#index'
   
