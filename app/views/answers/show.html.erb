@@ -1,6 +1,6 @@
 <% @answers.each do |answer| %>
 <% user = User.find_by_uid(answer.user_id) %>
-  <div id="answer-<%= answer.id %>" class="answer-area">
+  <div id="answer-<%= answer.id %>" class="answer-area" style="">
     <span><strong>
       <% if answer.anonimity %>
         Anonymous
@@ -9,6 +9,9 @@
       <% end %>
     </strong></span>
     <span class="answer-vote">
+      <% if current_user.is_staff %>
+        <a href="#" class="icon-ok"></a>
+      <% end %>
       <% if not current_user.uid == answer.user_id %>
         <a href="/answer/vote/<%= answer.id %>" class="icon-circle-arrow-up"></a>
       <% end %>

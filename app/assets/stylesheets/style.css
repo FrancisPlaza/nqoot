@@ -76,6 +76,7 @@ textarea {
 
 .display-auth {
   padding-top: 15px;
+  padding-bottom: 1px;
 }
 
 .display-auth p {
@@ -91,6 +92,7 @@ textarea {
 #answer-text-display {
   font-size: 13px;
   line-height: 18px;
+  word-wrap: break-word;
 }
 
 .answer-vote {
