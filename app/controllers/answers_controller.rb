@@ -14,17 +14,17 @@ class AnswersController < ApplicationController
   end
   
   def vote
-    vote = Vote.where(:user_id => current_user.uid, :answer_id => params[:answer_id]).all
-    if vote.length == 0
-      vote.add_vote(params, current_user.uid)
-    end
+    answer = Answer.find_by_id(params[:answer_id])
+    answer.vote += 1
+    answer.save!
+    redirect_to :back
   end
   
   def show
     if current_user
       @question = Question.find_by_id(params[:question_id])
-      if @question      
-        @answers = Answer.where(:question_id => @question.id).all
+      if @question    
+        @answers = Answer.where(:question_id => @question.id).order('vote DESC').all
         render :layout => false
       else
         render :nothing => true

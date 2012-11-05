@@ -3,17 +3,17 @@
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 
 $ ->
-  hostname = 'localhost:3000'
+  hostname = 'nqoot.francis.ph'
   
-  $('.delete_answer').live 'click', () ->
-    console.log('delete');
-    url = 'http://' + hostname + '/delete'
-    id = $(this).attr('id')
-    $.ajax
-      type: 'POST'
-      url: url
-      data: 'id=' + id
-      success: (data, code, xmlhttp) ->
+#  $('.delete_answer').live 'click', () ->
+#    console.log('delete');
+#    url = 'http://' + hostname + '/delete'
+#    id = $(this).attr('id')
+#    $.ajax
+#      type: 'POST'
+#      url: url
+#      data: 'id=' + id
+#      success: (data, code, xmlhttp) ->
   
   $('#add-answer').click (e) ->
     e.preventDefault()
@@ -29,4 +29,5 @@ $ ->
       url: url
       data: query
       success: (data, code, xmlhttp) ->
-        $('#answer-text').val('')        
+        $('#answer-text').val('')
+          

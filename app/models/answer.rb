@@ -8,6 +8,7 @@ class Answer < ActiveRecord::Base
     answer.anonimity = params[:anonimity]
     answer.question_id = params[:question_id]
     answer.user_id = uid
+    answer.vote = 0
     answer.save!
     return answer
   end

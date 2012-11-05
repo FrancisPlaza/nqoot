@@ -11,7 +11,7 @@ $ ->
     if $('#anon-post').attr('checked') == 'checked'
       anonimity = true
     query = 'question=' + question + '&description=' + description + '&anonimity=' + anonimity + '&slug=' + slug(question)
-    url = 'http://localhost:3000/add/question'
+    url = 'http://nqoot.francis.ph/add/question'
     $.ajax
       type: 'POST'
       url: url

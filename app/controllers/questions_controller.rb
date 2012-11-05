@@ -7,7 +7,7 @@ class QuestionsController < ApplicationController
     if current_user
       uid = current_user.uid
       slug = Question.add_question(params, uid)
-      render :text => 'http://localhost:3000/question/' + slug
+      render :text => 'http://nqoot.francis.ph/question/' + slug
     end
   end
   
@@ -16,7 +16,6 @@ class QuestionsController < ApplicationController
     if @question
       @user = User.find_by_uid(@question.user_id)
       @recent_questions = Question.all(:order => 'created_at DESC', :limit => 10)
-      
       render :layout => 'dashboard'
     else
       redirect_to root_url
