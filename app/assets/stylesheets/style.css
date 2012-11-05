@@ -88,7 +88,7 @@ textarea {
   padding-top: 10px;
 }
 
-.answer-text-display p {
+#answer-text-display {
   font-size: 13px;
   line-height: 18px;
 }

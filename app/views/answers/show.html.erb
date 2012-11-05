@@ -10,10 +10,10 @@
     </strong></span>
     <span class="answer-vote">
       <% if not current_user.uid == answer.user_id %>
-      <a href="/answer/vote/<%= answer.id %>" class="icon-circle-arrow-up"></a>
+        <a href="/answer/vote/<%= answer.id %>" class="icon-circle-arrow-up"></a>
       <% end %>
       <small><%= pluralize(answer.vote, 'vote') %></small></span>
-    <p id="answer-text-display"><%= answer.answer %></p>
+    <span id="answer-text-display"><%= answer.answer %></span>
     <div class="display-auth"><p>Posted on <%= answer.created_at.in_time_zone('Eastern Time (US & Canada)').strftime('%A, %B %d, %Y at %I:%M %p %Z') %>
       <% if current_user.uid == answer.user_id %>
       <!-- Not implemented yet -->
