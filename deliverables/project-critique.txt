@@ -1,0 +1,23 @@
+Design Critique
+
+Summary assessment from user's perspective
+
+The UI was designed to be simple and intuitive for the user. It uses a familiar interface, such as the dashboard and the menu bar. There are visual cues for endorsed answers as well. Overall, it works as expected and the user interface is well thought out.
+
+Summary assessment from developer's perspective
+
+I think the code base is well thought out. The functions that are specific to the model were written in the model as opposed to the controllers and assets were all clearly grouped together (i.e. stylesheets, javascript files). The naming of functions and variables were readable and concise.
+
+Most and least successful decision
+
+The most successful decision I think is the simple definition of a user, question, and an answer. For example, instead of defining a separate model for the user, the staff account is simply another user with an is_staff attribute set to true. The simplicity of the model made the whole design more straightforward.
+
+The least successful decision would probably be not thinking of other features ahead. This led for other necessary features such as delete and edits partially or not implemented up to this version. It would have been much easier to implement them if the idea of edits and deletes were thought out ahead of time.
+
+Analysis of design faults in terms of design principles
+
+A more concise and clear separation between the model and the controller would be better. For example, putting functions that are model specific to the model instead of letting the controller handle it.
+
+Priorities for improvement
+
+For improving the application in future, I think implementing other necessary features such as edits and deletes would be the top priority and representing them in the UI in an clear and intuitive way. The next priority would be the code base such as improving on a clearer separation between the models and controllers and adhering to the DRY principle.
