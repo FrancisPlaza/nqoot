@@ -25,10 +25,11 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 
-  gem 'therubyracer'
-  gem 'less-rails'  
-  gem 'twitter-bootstrap-rails', :require => 'v8'
 end
+
+gem 'therubyracer', :require => 'v8'
+gem 'less-rails'
+gem 'twitter-bootstrap-rails'
 
 gem 'jquery-rails'
 
