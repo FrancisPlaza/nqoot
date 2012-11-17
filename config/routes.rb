@@ -1,9 +1,4 @@
-EfcplazaProj3::Application.routes.draw do
-  # get "answers/create"
-
-  # get "users/index"
-
-  # get "sessions/create"
+Nqoot::Application.routes.draw do
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -24,8 +19,6 @@ EfcplazaProj3::Application.routes.draw do
   
   match 'get/answers' => 'answers#show'
   match 'add/staff/:uid' => 'users#add_staff'
-  
-  #match 'dashboard', to: 'dashboard#index'
   
   root :to => 'sessions#home'
 
