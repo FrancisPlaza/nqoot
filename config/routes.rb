@@ -8,22 +8,22 @@ EfcplazaProj3::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
   
-  match 'auth/:provider/callback', to: 'sessions#create'
-  match 'auth/failure', to: redirect('/')
-  match 'signout', to: 'sessions#destroy', as: 'signout'
+  match 'auth/:provider/callback' => 'sessions#create'
+  match 'auth/failure' => redirect('/')
+  match 'signout' => 'sessions#destroy', as: 'signout'
   
-  match 'ask', to: 'questions#ask'
-  match 'add/question', to: 'questions#create'
-  match 'question/:slug', to: 'questions#display'
+  match 'ask' => 'questions#ask'
+  match 'add/question' => 'questions#create'
+  match 'question/:slug' => 'questions#display'
   
-  match 'add/answer', to: 'answers#create'
-  match 'delete', to: 'answers#delete'
-  match 'answer/vote/:answer_id', to: 'answers#vote'
-  match 'answer/endorse/:answer_id', to: 'answers#endorse'
-  match 'answer/unendorse/:answer_id', to: 'answers#unendorse'
+  match 'add/answer' => 'answers#create'
+  match 'delete' => 'answers#delete'
+  match 'answer/vote/:answer_id' => 'answers#vote'
+  match 'answer/endorse/:answer_id' => 'answers#endorse'
+  match 'answer/unendorse/:answer_id' => 'answers#unendorse'
   
-  match 'get/answers', to: 'answers#show'
-  match 'add/staff/:uid', to: 'users#add_staff'
+  match 'get/answers' => 'answers#show'
+  match 'add/staff/:uid' => 'users#add_staff'
   
   #match 'dashboard', to: 'dashboard#index'
   
