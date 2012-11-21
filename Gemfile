@@ -50,4 +50,4 @@ gem 'jquery-rails'
 
 # To use with Facebook authentication
 gem 'omniauth-facebook', '1.4.0'
-gem 'private_pub'
+# gem 'private_pub'
