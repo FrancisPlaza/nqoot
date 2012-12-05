@@ -2,6 +2,11 @@ class Answer < ActiveRecord::Base
   attr_accessible :anonimity, :answer, :question_id, :user_id
   belongs_to :question
   
+  # Creates new answer to a given question
+  # specified by question_id.
+  #
+  # A user is associated to a specific answer
+  # through the given uid.
   def self.add_answer(params, uid)
     answer = Answer.new
     answer.answer = params[:answer]

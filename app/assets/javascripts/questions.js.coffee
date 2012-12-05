@@ -3,6 +3,9 @@
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 
 $ ->
+  
+  hostname = 'localhost:3000'
+  
   $('#add-question').click (e) ->
     e.preventDefault()
     question = $('#question-title').val()
@@ -11,10 +14,11 @@ $ ->
     if $('#anon-post').attr('checked') == 'checked'
       anonimity = true
     query = 'question=' + question + '&description=' + description + '&anonimity=' + anonimity + '&slug=' + slug(question)
-    url = 'http://nqoot.francis.ph/add/question'
+    url = 'http://' + hostname + '/add/question'
     $.ajax
       type: 'POST'
       url: url
       data: query
       success: (data, code, xmlhttp) ->
+        console.log('added question');
         window.location = xmlhttp.responseText

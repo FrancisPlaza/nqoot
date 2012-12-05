@@ -22,7 +22,7 @@
           <% else %>
             by <%= @user.name %>
           <% end %>
-          created on <%= @question.created_at.in_time_zone('Eastern Time (US & Canada)').strftime('%A, %B %d, %Y at %I:%M %p %Z') %></p></div>
+            created on <%= @question.created_at.in_time_zone('Eastern Time (US & Canada)').strftime('%A, %B %d, %Y at %I:%M %p %Z') %></p></div>
         </div>
         
         <div id="answers-panel">
@@ -48,13 +48,12 @@
     </div>
 </div>
 <script type='text/javascript'>
-var hostname = "http://nqoot.francis.ph/";
-//var tstamp = Math.round((new Date()).getTime() / 1000);
+var hostname = 'localhost:3000';
 
 var poll = function(){
   var timeout = setTimeout(function(){
   $.ajax({
-    url: hostname + 'get/answers',
+    url: 'http://' + hostname + '/get/answers',
     data: 'question_id=<%= @question.id %>',
     success: function(data, code, xmlhttp){
       $('#answers-panel').html(xmlhttp.responseText);
@@ -65,7 +64,7 @@ var poll = function(){
 }
 
 $.ajax({
-  url: hostname + 'get/answers',
+  url: 'http://' + hostname + '/get/answers',
   data: 'question_id=<%= @question.id %>',
   success: function(data, code, xmlhttp){
     $('#answers-panel').html(xmlhttp.responseText);

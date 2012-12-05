@@ -1,13 +1,17 @@
 class QuestionsController < ApplicationController
+  
   def ask
     render :layout => 'dashboard'
   end
   
   def create
+    # Configure this when local or production
+    hostname = 'localhost:3000'
+    
     if current_user
       uid = current_user.uid
       slug = Question.add_question(params, uid)
-      render :text => 'http://nqoot.francis.ph/question/' + slug
+      render :text => 'http://' + hostname + '/question/' + slug
     end
   end
   

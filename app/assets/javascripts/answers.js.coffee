@@ -3,17 +3,37 @@
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 
 $ ->
-  hostname = 'nqoot.francis.ph'
+  hostname = 'localhost:3000'
   
-#  $('.delete_answer').live 'click', () ->
-#    console.log('delete');
-#    url = 'http://' + hostname + '/delete'
-#    id = $(this).attr('id')
-#    $.ajax
-#      type: 'POST'
-#      url: url
-#      data: 'id=' + id
-#      success: (data, code, xmlhttp) ->
+  $('.delete_answer').live 'click', () ->
+    url = 'http://' + hostname + '/delete'
+    id = $(this).attr('id')
+    $.ajax
+      type: 'POST'
+      url: url
+      data: 'id=' + id
+      success: (data, code, xmlhttp) ->
+        console.log('answer deleted')
+        
+  $('.add_vote').live 'click', () ->
+    url = 'http://' + hostname + '/answer/vote/up'
+    id = $(this).attr('id')
+    $.ajax
+      type: 'POST'
+      url: url
+      data: 'answer_id=' + id
+      success: (data, code, xmlhttp) ->
+        console.log('answer upvoted')
+        
+  $('.down_vote').live 'click', () ->
+    url = 'http://' + hostname + '/answer/vote/down'
+    id = $(this).attr('id')
+    $.ajax
+      type: 'POST'
+      url: url
+      data: 'answer_id=' + id
+      success: (data, code, xmlhttp) ->
+        console.log('answer downvoted')
   
   $('#add-answer').click (e) ->
     e.preventDefault()
