@@ -122,3 +122,7 @@ textarea {
   color: gray;
   margin: 0 0 0 0;
 }
+
+.pointer-answer {
+  cursor: pointer;
+}

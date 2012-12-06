@@ -34,6 +34,26 @@ $ ->
       data: 'answer_id=' + id
       success: (data, code, xmlhttp) ->
         console.log('answer downvoted')
+        
+  $('.endorse').live 'click', () ->
+    url = 'http://' + hostname + '/answer/endorse'
+    id = $(this).attr('id')
+    $.ajax
+      type: 'POST'
+      url: url
+      data: 'answer_id=' + id
+      success: (data, code, xmlhttp) ->
+        console.log('answer endorsed')
+  
+  $('.unendorse').live 'click', () ->
+    url = 'http://' + hostname + '/answer/unendorse'
+    id = $(this).attr('id')
+    $.ajax
+      type: 'POST'
+      url: url
+      data: 'answer_id=' + id
+      success: (data, code, xmlhttp) ->
+        console.log('answer unendorsed')
   
   $('#add-answer').click (e) ->
     e.preventDefault()

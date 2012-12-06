@@ -11,16 +11,16 @@
     <span class="answer-vote">
       <% if current_user.is_staff %>
         <% if not answer.is_staff_endorsed %>
-          <a href="/answer/endorse/<%= answer.id %>" class="icon-ok"></a>
+          <a id="<%= answer.id %>" class="icon-ok endorse pointer-answer"></a>
         <% else %>
-          <a href="/answer/unendorse/<%= answer.id %>" class="icon-remove"></a>
+          <a id="<%= answer.id %>" class="icon-remove unendorse pointer-answer"></a>
         <% end %>
       <% end %>
       <% if not current_user.uid == answer.user_id %>
         <% if Vote.can_vote(answer.id, current_user.uid) %>
-          <a id="<%= answer.id %>" class="icon-circle-arrow-up add_vote"></a>
+          <a id="<%= answer.id %>" class="icon-circle-arrow-up add_vote pointer-answer"></a>
         <% else %>
-          <a id="<%= answer.id %>" class="icon-circle-arrow-down down_vote"></a>
+          <a id="<%= answer.id %>" class="icon-circle-arrow-down down_vote pointer-answer"></a>
         <% end %>
       <% end %>
       <small><%= pluralize(answer.vote, 'vote') %></small></span>

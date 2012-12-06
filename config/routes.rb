@@ -15,8 +15,8 @@ Nqoot::Application.routes.draw do
   match 'delete' => 'answers#delete'
   match 'answer/vote/up' => 'answers#vote'
   match 'answer/vote/down' => 'answers#down_vote'
-  match 'answer/endorse/:answer_id' => 'answers#endorse'
-  match 'answer/unendorse/:answer_id' => 'answers#unendorse'
+  match 'answer/endorse' => 'answers#endorse'
+  match 'answer/unendorse' => 'answers#unendorse'
   
   match 'get/answers' => 'answers#show'
   match 'add/staff/:uid' => 'users#add_staff'
