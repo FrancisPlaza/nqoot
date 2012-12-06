@@ -24,7 +24,8 @@ class Vote < ActiveRecord::Base
     vote = Vote.where(:answer_id => answer_id, :user_id => uid).all
     
     if vote.size() > 0
-      return vote[0].destroy!
+      vote[0].destroy
+      return true
     end
     
     return false
