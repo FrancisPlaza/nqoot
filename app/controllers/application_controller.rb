@@ -3,6 +3,8 @@ class ApplicationController < ActionController::Base
   
 private
   
+  # Helper method to get the current_user, a current
+  # logged in user in the session.
   def current_user
     @current_user ||= User.find(session[:user_id]) if session[:user_id]
   end

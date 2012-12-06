@@ -6,16 +6,21 @@ class Answer < ActiveRecord::Base
   # specified by question_id.
   #
   # A user is associated to a specific answer
-  # through the given uid.
+  # through the given uid. Only add answer
+  # if user exists, return false otherwise.
   def self.add_answer(params, uid)
-    answer = Answer.new
-    answer.answer = params[:answer]
-    answer.anonimity = params[:anonimity]
-    answer.question_id = params[:question_id]
-    answer.user_id = uid
-    answer.vote = 0
-    answer.is_staff_endorsed = false
-    answer.save!
-    return answer
+    user = User.where(:uid => uid).all
+    if user.size() > 0
+      answer = Answer.new
+      answer.answer = params[:answer]
+      answer.anonimity = params[:anonimity]
+      answer.question_id = params[:question_id]
+      answer.user_id = uid
+      answer.vote = 0
+      answer.is_staff_endorsed = false
+      return answer.save!
+    end
+    
+    return false
   end
 end

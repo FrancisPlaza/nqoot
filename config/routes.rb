@@ -13,7 +13,7 @@ Nqoot::Application.routes.draw do
   
   match 'add/answer' => 'answers#create'
   match 'delete' => 'answers#delete'
-  match 'answer/vote/up' => 'answers#vote'
+  match 'answer/vote/up' => 'answers#up_vote'
   match 'answer/vote/down' => 'answers#down_vote'
   match 'answer/endorse' => 'answers#endorse'
   match 'answer/unendorse' => 'answers#unendorse'

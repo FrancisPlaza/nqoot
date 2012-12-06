@@ -4,7 +4,8 @@
 
 $ ->
   
-  hostname = 'localhost:3000'
+  # hostname = 'localhost:3000'
+  hostname = 'nqoot.francis.ph'
   
   $('#add-question').click (e) ->
     e.preventDefault()

@@ -21,8 +21,9 @@ class AnswersController < ApplicationController
   end
   
   # Given an id of an answer, adds one vote to
-  # the specific answer.
-  def vote
+  # the specific answer. Only allow upvote if
+  # user has not upvoted an answer.
+  def up_vote
     if current_user
       answer_id = params[:answer_id]
       can_vote = Vote.can_vote(answer_id, current_user.uid)
@@ -37,6 +38,9 @@ class AnswersController < ApplicationController
     render :nothing => true
   end
   
+  # Given an id of answer, deducts one vote from
+  # the specific answer. Only allow downvote if
+  # user already upvoted the answer.
   def down_vote
     if current_user
       answer_id = params[:answer_id]
@@ -51,24 +55,30 @@ class AnswersController < ApplicationController
     end
   end
   
+  # Sets is_staff_endorsed to true to an answer
+  # given an answer_id.
   def endorse
     if current_user.is_staff
       answer = Answer.find_by_id(params[:answer_id])
       answer.is_staff_endorsed = true
       answer.save!
     end
-    redirect_to :back
+    render :nothing => true
   end
   
+  # Sets is_staff_endorsed to false to an answer
+  # given an answer_id.
   def unendorse
     if current_user.is_staff
       answer = Answer.find_by_id(params[:answer_id])
       answer.is_staff_endorsed = false
       answer.save!
     end
-    redirect_to :back
+    render :nothing => true
   end
-  
+
+  # Function called to render all answers to a answers
+  # given an answer_id. Ordered by descending votes.  
   def show
     if current_user
       @question = Question.find_by_id(params[:question_id])

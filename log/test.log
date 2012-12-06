@@ -1,0 +1,157 @@
+Connecting to database specified by database.yml
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "answers"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "answers" ("answer", "user_id", "anonimity", "question_id", "created_at", "updated_at", "id") VALUES ('MyString', 1, 'f', 1, '2012-12-06 20:31:41', '2012-12-06 20:31:41', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "answers" ("answer", "user_id", "anonimity", "question_id", "created_at", "updated_at", "id") VALUES ('MyString', 1, 'f', 1, '2012-12-06 20:31:41', '2012-12-06 20:31:41', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "questions"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "questions" ("question", "description", "anonimity", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', 1, '2012-12-06 20:31:41', '2012-12-06 20:31:41', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "questions" ("question", "description", "anonimity", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', 1, '2012-12-06 20:31:41', '2012-12-06 20:31:41', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2012-10-22 17:39:05.000000', '2012-12-06 20:31:41', '2012-12-06 20:31:41', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2012-10-22 17:39:05.000000', '2012-12-06 20:31:41', '2012-12-06 20:31:41', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "votes"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "votes" ("user_id", "answer_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-12-06 20:31:41', '2012-12-06 20:31:41', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "votes" ("user_id", "answer_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-12-06 20:31:41', '2012-12-06 20:31:41', 298486374)[0m
+  [1m[35m (6.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."uid" = 'invalid_uid'
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "answers"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "answers" ("answer", "user_id", "anonimity", "question_id", "created_at", "updated_at", "id") VALUES ('MyString', 1, 'f', 1, '2012-12-06 20:31:55', '2012-12-06 20:31:55', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "answers" ("answer", "user_id", "anonimity", "question_id", "created_at", "updated_at", "id") VALUES ('MyString', 1, 'f', 1, '2012-12-06 20:31:55', '2012-12-06 20:31:55', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "questions"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "questions" ("question", "description", "anonimity", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', 1, '2012-12-06 20:31:55', '2012-12-06 20:31:55', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "questions" ("question", "description", "anonimity", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', 1, '2012-12-06 20:31:55', '2012-12-06 20:31:55', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2012-10-22 17:39:05.000000', '2012-12-06 20:31:55', '2012-12-06 20:31:55', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2012-10-22 17:39:05.000000', '2012-12-06 20:31:55', '2012-12-06 20:31:55', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "votes"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "votes" ("user_id", "answer_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-12-06 20:31:55', '2012-12-06 20:31:55', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "votes" ("user_id", "answer_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-12-06 20:31:55', '2012-12-06 20:31:55', 298486374)[0m
+  [1m[35m (45.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."uid" = 'invalid_uid'
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "answers"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "answers" ("answer", "user_id", "anonimity", "question_id", "created_at", "updated_at", "id") VALUES ('MyString', 1, 'f', 1, '2012-12-06 20:32:32', '2012-12-06 20:32:32', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "answers" ("answer", "user_id", "anonimity", "question_id", "created_at", "updated_at", "id") VALUES ('MyString', 1, 'f', 1, '2012-12-06 20:32:32', '2012-12-06 20:32:32', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "questions"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "questions" ("question", "description", "anonimity", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', 1, '2012-12-06 20:32:32', '2012-12-06 20:32:32', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "questions" ("question", "description", "anonimity", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', 1, '2012-12-06 20:32:32', '2012-12-06 20:32:32', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2012-10-22 17:39:05.000000', '2012-12-06 20:32:32', '2012-12-06 20:32:32', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2012-10-22 17:39:05.000000', '2012-12-06 20:32:32', '2012-12-06 20:32:32', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "votes"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "votes" ("user_id", "answer_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-12-06 20:32:32', '2012-12-06 20:32:32', 980190962)
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "votes" ("user_id", "answer_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-12-06 20:32:32', '2012-12-06 20:32:32', 298486374)[0m
+  [1m[35m (42.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."uid" = 'invalid_uid'
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "answers"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "answers" ("answer", "user_id", "anonimity", "question_id", "created_at", "updated_at", "id") VALUES ('MyString', 1, 'f', 1, '2012-12-06 20:34:34', '2012-12-06 20:34:34', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "answers" ("answer", "user_id", "anonimity", "question_id", "created_at", "updated_at", "id") VALUES ('MyString', 1, 'f', 1, '2012-12-06 20:34:34', '2012-12-06 20:34:34', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "questions"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "questions" ("question", "description", "anonimity", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', 1, '2012-12-06 20:34:34', '2012-12-06 20:34:34', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "questions" ("question", "description", "anonimity", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', 1, '2012-12-06 20:34:34', '2012-12-06 20:34:34', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2012-10-22 17:39:05.000000', '2012-12-06 20:34:34', '2012-12-06 20:34:34', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2012-10-22 17:39:05.000000', '2012-12-06 20:34:34', '2012-12-06 20:34:34', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "votes"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "votes" ("user_id", "answer_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-12-06 20:34:34', '2012-12-06 20:34:34', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "votes" ("user_id", "answer_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-12-06 20:34:34', '2012-12-06 20:34:34', 298486374)[0m
+  [1m[35m (40.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.3ms)[0m  [1mINSERT INTO "users" ("created_at", "is_staff", "name", "oauth_expires_at", "oauth_token", "provider", "uid", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Thu, 06 Dec 2012 20:34:34 UTC +00:00], ["is_staff", nil], ["name", nil], ["oauth_expires_at", nil], ["oauth_token", nil], ["provider", nil], ["uid", "1000"], ["updated_at", Thu, 06 Dec 2012 20:34:34 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = '1000'[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "answers" ("anonimity", "answer", "created_at", "is_staff_endorsed", "question_id", "updated_at", "user_id", "vote") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["anonimity", false], ["answer", "This is answer"], ["created_at", Thu, 06 Dec 2012 20:34:34 UTC +00:00], ["is_staff_endorsed", false], ["question_id", 1], ["updated_at", Thu, 06 Dec 2012 20:34:34 UTC +00:00], ["user_id", "1000"], ["vote", 0]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (8.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = 'invalid_uid'[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "answers"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "answers" ("answer", "user_id", "anonimity", "question_id", "created_at", "updated_at", "id") VALUES ('MyString', 1, 'f', 1, '2012-12-06 20:44:06', '2012-12-06 20:44:06', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "answers" ("answer", "user_id", "anonimity", "question_id", "created_at", "updated_at", "id") VALUES ('MyString', 1, 'f', 1, '2012-12-06 20:44:06', '2012-12-06 20:44:06', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "questions"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "questions" ("question", "description", "anonimity", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', 1, '2012-12-06 20:44:06', '2012-12-06 20:44:06', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "questions" ("question", "description", "anonimity", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', 1, '2012-12-06 20:44:06', '2012-12-06 20:44:06', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2012-10-22 17:39:05.000000', '2012-12-06 20:44:06', '2012-12-06 20:44:06', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2012-10-22 17:39:05.000000', '2012-12-06 20:44:06', '2012-12-06 20:44:06', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "votes"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "votes" ("user_id", "answer_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-12-06 20:44:06', '2012-12-06 20:44:06', 980190962)
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "votes" ("user_id", "answer_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-12-06 20:44:06', '2012-12-06 20:44:06', 298486374)[0m
+  [1m[35m (40.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.8ms)[0m  [1mINSERT INTO "users" ("created_at", "is_staff", "name", "oauth_expires_at", "oauth_token", "provider", "uid", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Thu, 06 Dec 2012 20:44:06 UTC +00:00], ["is_staff", nil], ["name", nil], ["oauth_expires_at", nil], ["oauth_token", nil], ["provider", nil], ["uid", "1000"], ["updated_at", Thu, 06 Dec 2012 20:44:06 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "answers"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "answers" ("answer", "user_id", "anonimity", "question_id", "created_at", "updated_at", "id") VALUES ('MyString', 1, 'f', 1, '2012-12-06 20:44:27', '2012-12-06 20:44:27', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "answers" ("answer", "user_id", "anonimity", "question_id", "created_at", "updated_at", "id") VALUES ('MyString', 1, 'f', 1, '2012-12-06 20:44:27', '2012-12-06 20:44:27', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "questions"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "questions" ("question", "description", "anonimity", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', 1, '2012-12-06 20:44:27', '2012-12-06 20:44:27', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "questions" ("question", "description", "anonimity", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', 1, '2012-12-06 20:44:27', '2012-12-06 20:44:27', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2012-10-22 17:39:05.000000', '2012-12-06 20:44:27', '2012-12-06 20:44:27', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2012-10-22 17:39:05.000000', '2012-12-06 20:44:27', '2012-12-06 20:44:27', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "votes"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "votes" ("user_id", "answer_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-12-06 20:44:27', '2012-12-06 20:44:27', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "votes" ("user_id", "answer_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-12-06 20:44:27', '2012-12-06 20:44:27', 298486374)[0m
+  [1m[35m (48.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.8ms)[0m  [1mINSERT INTO "users" ("created_at", "is_staff", "name", "oauth_expires_at", "oauth_token", "provider", "uid", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Thu, 06 Dec 2012 20:44:27 UTC +00:00], ["is_staff", nil], ["name", nil], ["oauth_expires_at", nil], ["oauth_token", nil], ["provider", nil], ["uid", "1000"], ["updated_at", Thu, 06 Dec 2012 20:44:27 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = '1000'[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "questions" ("anonimity", "created_at", "description", "question", "slug", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["anonimity", false], ["created_at", Thu, 06 Dec 2012 20:44:27 UTC +00:00], ["description", "This is a description."], ["question", "This is a question."], ["slug", "this-is-a-question"], ["updated_at", Thu, 06 Dec 2012 20:44:27 UTC +00:00], ["user_id", "1000"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (8.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = 'invalid_uid'[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "answers"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "answers" ("answer", "user_id", "anonimity", "question_id", "created_at", "updated_at", "id") VALUES ('MyString', 1, 'f', 1, '2012-12-06 20:45:01', '2012-12-06 20:45:01', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "answers" ("answer", "user_id", "anonimity", "question_id", "created_at", "updated_at", "id") VALUES ('MyString', 1, 'f', 1, '2012-12-06 20:45:01', '2012-12-06 20:45:01', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "questions"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "questions" ("question", "description", "anonimity", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', 1, '2012-12-06 20:45:01', '2012-12-06 20:45:01', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "questions" ("question", "description", "anonimity", "user_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'f', 1, '2012-12-06 20:45:01', '2012-12-06 20:45:01', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2012-10-22 17:39:05.000000', '2012-12-06 20:45:01', '2012-12-06 20:45:01', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "users" ("provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2012-10-22 17:39:05.000000', '2012-12-06 20:45:01', '2012-12-06 20:45:01', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "votes"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "votes" ("user_id", "answer_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-12-06 20:45:01', '2012-12-06 20:45:01', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "votes" ("user_id", "answer_id", "created_at", "updated_at", "id") VALUES (1, 1, '2012-12-06 20:45:01', '2012-12-06 20:45:01', 298486374)[0m
+  [1m[35m (46.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.8ms)[0m  [1mINSERT INTO "users" ("created_at", "is_staff", "name", "oauth_expires_at", "oauth_token", "provider", "uid", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Thu, 06 Dec 2012 20:45:01 UTC +00:00], ["is_staff", nil], ["name", nil], ["oauth_expires_at", nil], ["oauth_token", nil], ["provider", nil], ["uid", "1000"], ["updated_at", Thu, 06 Dec 2012 20:45:01 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = '1000'[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "questions" ("anonimity", "created_at", "description", "question", "slug", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["anonimity", false], ["created_at", Thu, 06 Dec 2012 20:45:01 UTC +00:00], ["description", "This is a description."], ["question", "This is a question."], ["slug", "this-is-a-question"], ["updated_at", Thu, 06 Dec 2012 20:45:01 UTC +00:00], ["user_id", "1000"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (8.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = 'invalid_uid'[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
