@@ -34,12 +34,12 @@ class Vote < ActiveRecord::Base
   # Returns a boolean specifying if a user
   # given a uid can vote a certain answer.
   def self.can_vote(answer_id, uid)
-    vote = Vote.where(:answer_id => answer_id, :user_id => uid)
+    vote = Vote.where(:answer_id => answer_id, :user_id => uid).all
     
-    if vote.size() > 0
-      return false
+    if not vote.size() > 0
+      return true
     end
     
-    return true
+    return false
   end
 end
