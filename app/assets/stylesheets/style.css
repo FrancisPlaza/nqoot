@@ -102,6 +102,10 @@ textarea {
   word-wrap: break-word;
 }
 
+#answer-text-display p {
+  margin: 0px 10px 10px 10px;
+}
+
 .answer-vote {
   display: block;
   color: gray;
